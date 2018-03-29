@@ -1,0 +1,221 @@
+Top	1	Population characteristics
+1	2	Ongoing characteristics
+100091	42	Algorithmically-defined outcomes
+42	43	Stroke outcomes
+42	44	Myocardial infarction outcomes
+100003	100	Brain MRI
+100006	101	Carotid ultrasound
+100003	102	Heart MRI
+100003	103	DXA assessment
+100006	104	ECG at rest, 12-lead
+100003	105	Abdominal MRI
+100	106	Task functional brain MRI
+100	107	Diffusion brain MRI
+100	108	Scout images and configuration for brain MRI
+100	109	Susceptibility weighted brain MRI
+100	110	T1 structural brain MRI
+100	111	Resting functional brain MRI
+100	112	T2-weighted brain MRI
+100088	113	Local environment
+113	114	Residential air pollution
+113	115	Residential noise pollution
+100089	116	Cognitive function online
+116	117	Pairs matching
+116	118	Fluid intelligence
+116	120	Numeric memory
+116	121	Trail making
+116	122	Symbol digit substitution
+100089	123	Work environment
+103	124	Body composition by DXA
+103	125	Bone size, mineral and density by DXA
+105	126	Liver MRI
+100004	127	Touchscreen timings and usage
+102	128	Pulse wave analysis
+100004	129	Consent timings and usage
+123	130	Employment history
+105	131	Pancreas MRI
+123	132	Medical information
+102	133	Left ventricular size and function
+107	134	dMRI skeleton
+107	135	dMRI weighted means
+100089	136	Mental health
+136	137	Mental distress
+136	138	Depression
+136	139	Mania
+136	140	Anxiety
+136	141	Addictions
+136	142	Alcohol use
+136	143	Cannabis use
+136	144	Unusual and psychotic experiences
+136	145	Traumatic events
+136	146	Self-harm behaviours
+136	147	Happiness and subjective well-being
+100083	148	Urine processing
+105	149	Abdominal composition
+113	150	Home locations
+100026	501	Matrix pattern completion
+100026	502	Symbol digit substitution
+100026	503	Tower rearranging
+100026	504	Picture vocabulary
+100026	505	Trail making
+100026	506	Paired associate learning
+Top	1001	Primary demographics
+Top	1002	Early life
+Top	1003	Self-reported medical conditions
+Top	1004	Diet and alcohol summary
+Top	1005	Cognitive function summary
+Top	1006	Physical measure summary
+Top	1007	Education and employment
+100088	1008	Physical activity measurement
+1008	1009	Acceleration averages
+1008	1010	Acceleration intensity distribution
+1008	1011	Accelerometer wear time duration
+1008	1012	Accelerometer calibration
+1008	1013	Raw accelerometer statistics
+100091	2000	Hospital in-patient
+2000	2001	Admission and discharge
+2000	2002	Diagnoses
+2000	2003	Maternity
+2000	2004	Psychiatric
+2000	2005	Operations
+2001	2011	Spell and Episode Data (admission and discharge)
+2002	2012	Spell and Episode Data (diagnoses)
+2003	2013	Spell and Episode Data (maternity)
+2004	2014	Spell and Episode Data (psychiatric)
+2005	2015	Spell and Episode Data (operations)
+2001	2021	Summary Information (admission and discharge)
+2002	2022	Summary Information (diagnoses)
+2003	2023	Summary Information (maternity)
+2004	2024	Summary Information (psychiatric)
+2005	2025	Summary Information (operations)
+Top	2384	XNAT image package
+10000	9001	Genomics datasets
+100081	9081	Blood count processing
+Top	10000	Returned datasets
+10000	10001	Lifestyle choices and risk of developing short-sightedness
+9001	10002	UK BiLEVE
+10000	10003	Phenome-wide association study and prediction of two-years mortality
+Top	100000	UK Biobank Assessment Centre
+100000	100001	Biological sampling
+100001	100002	Blood sample collection
+100000	100003	Imaging
+100000	100004	Procedural metrics
+Top	100005	Pilot assessment
+100000	100006	Physical measures
+100006	100007	Arterial stiffness
+100006	100008	Anthropometry
+100008	100009	Impedance measures
+100008	100010	Body size measures
+100006	100011	Blood pressure
+100006	100012	ECG during exercise
+100006	100013	Eye measures
+100013	100014	Autorefraction
+100013	100015	Intraocular pressure
+100013	100016	Retinal optical coherence tomography
+100013	100017	Visual acuity
+100006	100018	Bone-densitometry of heel
+100006	100019	Hand grip strength
+100006	100020	Spirometry
+100000	100021	Recruitment
+100021	100022	Conclusion
+100021	100023	Consent
+100021	100024	Reception
+100000	100025	Touchscreen
+100000	100026	Cognitive function
+100026	100027	Fluid intelligence
+100026	100028	Lights pattern memory
+100026	100029	Numeric memory
+100026	100030	Pairs matching
+100026	100031	Prospective memory
+100026	100032	Reaction time
+100025	100033	Early life factors
+100025	100034	Family history
+100314	100035	HLA
+100025	100036	Health and medical history
+100036	100037	Breathing
+100036	100038	Claudication and peripheral artery disease
+100036	100039	Chest pain
+100036	100040	Cancer screening
+100036	100041	Eyesight
+100036	100042	General health
+100036	100043	Hearing
+100036	100044	Medical conditions
+100036	100045	Medication
+100036	100046	Mouth
+100036	100047	Operations
+100036	100048	Pain
+100006	100049	Hearing test
+100025	100050	Lifestyle and environment
+100050	100051	Alcohol
+100050	100052	Diet
+100050	100053	Electronic device use
+100050	100054	Physical activity
+100050	100055	Sun exposure
+100050	100056	Sexual factors
+100050	100057	Sleep
+100050	100058	Smoking
+100025	100059	Psychosocial factors
+100059	100060	Mental health
+100059	100061	Social support
+100025	100062	Sociodemographics
+100062	100063	Education
+100062	100064	Employment
+100062	100065	Ethnicity
+100062	100066	Household
+100062	100067	Other sociodemographic factors
+100025	100068	Sex-specific factors
+100068	100069	Female-specific factors
+100068	100070	Male-specific factors
+100000	100071	Verbal interview
+100071	100072	Early life factors
+100071	100073	Employment
+100071	100074	Medical conditions
+100071	100075	Medications
+100071	100076	Operations
+100026	100077	Word production
+Top	100078	Biological samples
+100078	100079	Assay results
+100079	100080	Blood assays
+100080	100081	Blood count
+100079	100082	Saliva assays
+100079	100083	Urine assays
+100078	100084	Sample inventory
+100084	100085	Blood sample inventory
+100084	100086	Saliva sample inventory
+100084	100087	Urine sample inventory
+Top	100088	Additional exposures
+Top	100089	Online follow-up
+100089	100090	Diet by 24-hour recall
+Top	100091	Health-related outcomes
+100091	100092	Cancer register
+100091	100093	Death register
+1	100094	Baseline characteristics
+100001	100095	Urine sample collection
+100001	100096	Saliva sample collection
+100090	100097	Typical diet yesterday
+100090	100098	Estimated nutrients yesterday
+100013	100099	Eye surgery/complications
+100090	100100	Alcoholic beverages yesterday
+100090	100101	Bread/pasta/rice yesterday
+100090	100102	Cereal yesterday
+100090	100103	Fruit/vegetables yesterday
+100090	100104	Hot/cold beverages yesterday
+100090	100105	Meal type yesterday
+100090	100106	Meat/fish yesterday
+100090	100107	Milk/eggs/cheese yesterday
+100090	100108	Physical activity yesterday
+100090	100109	Soup/snacks/pastries yesterday
+100090	100110	Spreads/sauces/cooking oils yesterday
+100090	100111	Vegetarian alternatives yesterday
+100090	100112	Vitamin/mineral supplements yesterday
+Top	100113	Geographical and location
+100090	100114	Diet questionnaire performance
+113	100115	UK Biobank Urban Morphometric Platform
+Top	100120	Communication and participation in extension studies
+100314	100313	Genotyping process and sample QC
+Top	100314	Genomics
+100314	100315	Genotypes
+199001	100316	Genotype confidences
+199001	100317	Genotyping intensities
+100314	100319	Imputation
+100314	199001	Interim genotype release
