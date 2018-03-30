@@ -10,6 +10,9 @@ confounder: jobs/step3-conf.txt.gz
 
 confounder-long: jobs/step3-long-conf.txt.gz
 
+combine-confounder: ./make.combine-confounders.R
+	[ -f $@.log ] || qsub -P compbio_lab -o $@.log -cwd -V -l h_vmem=16g -l h_rt=1:00:00 -b y -j y -N $@ ./run.sh ./$<
+
 fgwas: jobs/step3-fgwas.txt.gz
 
 fgwas-long: jobs/step3-long-fgwas.txt.gz
@@ -30,7 +33,7 @@ jobs/step3-long-%.txt.gz: jobs/step3-%.txt.gz
 jobs/step3/%-conf-jobs:
 	@[ -d $(dir $@) ] || mkdir -p $(dir $@)
 	@printf "" > $@
-	@[ -f result/conf/$${CK}/$*.conf-ind.gz ] || echo ./make.run-conf.R $(TEMPDIR)/$* 1KG_EUR/chr$(shell echo $* | awk -F'/' '{ print $$1 }') $${CK} result/conf/$${CK}/$* >> $@
+	@[ -f result/conf/$(CK)/$*.conf-ind.gz ] || echo ./make.run-conf.R $(TEMPDIR)/$* 1KG_EUR/chr$(shell echo $* | awk -F'/' '{ print $$1 }') $(CK) result/conf/$(CK)/$* >> $@
 
 # % = $(chr)/$(ld)
 jobs/step3/%-fgwas-jobs:
