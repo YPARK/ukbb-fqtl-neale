@@ -2,15 +2,14 @@
 
 argv <- commandArgs(trailingOnly = TRUE)
 
-if(length(argv) != 7) q()
+if(length(argv) != 6) q()
 
 in.dir <- argv[1]               # e.g., in.dir = 'data/1/1/'
 plink.hdr <- argv[2]            # e.g., plink.hdr = '1KG_EUR/chr1'
 K.max <- as.integer(argv[3])    # e.g., K.max = 50
 NON.NEG <- as.logical(argv[4])  # e.g., NON.NEG = FALSE
-conf.file <- argv[5]            # e.g., conf.file = 'result/conf/50/1/1.conf-ind.gz'
-conf.lodds.file <- argv[6]      # e.g., conf.lodds.file = 'result/conf/50/1/1.conf-lodds.gz'
-out.hdr <- argv[7]              # e.g., out.hdr = 'temp'
+conf.file <- argv[5]            # e.g., conf.file = 'result/conf/50/loco_1.gz'
+out.hdr <- argv[6]              # e.g., out.hdr = 'temp'
 
 options(stringsAsFactors = FALSE)
 source('util.R')
@@ -164,56 +163,14 @@ if(!file.exists(conf.file)) {
     q()
 }
 
-read.conf <- function(.lodds.file, .conf.file, .cutoff = log(0.9) - log(0.1)) {
-    .lodds.tab <- read_tsv(.lodds.file)
-    if(nrow(.lodds.tab) < 1) return(NULL)
-    .factors <- .lodds.tab %>% filter(conf.lodds > .cutoff) %>%
-        select(conf.factor) %>%
-            unlist(use.names = FALSE)
-    if(length(.factors) < 1) return(NULL)
+conf.tab <- read_tsv(conf.file)
 
-    .conf.tab <- suppressMessages(read_tsv(.conf.file))
-    if(nrow(.conf.tab) < 1) return(NULL)
+C <- plink.fam %>% select(iid) %>%
+    left_join(conf.tab) %>%
+        select(-iid) %>%
+            as.matrix()
 
-    .pos <- match(plink.fam[, 2], .conf.tab$iid)
-    if(any(is.na(.pos))) {
-        log.msg('Confounder file does not match with plink: %s\n', conf.file)
-        q()
-    }
-    ret <- .conf.tab[.pos, -1] %c% .factors
-    rm(.pos)
-    return(ret)
-}
-
-C <- read.conf(conf.lodds.file, conf.file)
-
-if(is.null(C)) {
-    C <- matrix(1, nrow(plink.fam), 1)
-} else {
-
-    ## Find correlated confounders outside of the LD block
-    conf.dir <- dirname(conf.file)
-
-    .other.files <- list.files(conf.dir, pattern = '.conf-ind.gz', full.names = TRUE) %>%
-        setdiff(y = conf.file) %>% sort()
-
-    .lodds.files <- sapply(.other.files, gsub, pattern = '-ind.gz', replacement = '-lodds.gz')
-
-    C.other <- bind_cols(lapply(1:length(.other.files), function(j) read.conf(.lodds.files[j], .other.files[j])))
-
-    colnames(C.other) <- 1:ncol(C.other)
-    colnames(C) <- 1:ncol(C)
-
-    other.idx <- find.cor.idx(C, C.other, 5, p.val.cutoff = 0.01) %>% unique()
-
-    if(length(other.idx) > 0) {
-        ## add intercept
-        C <- C.other %c% other.idx %>% as.data.frame() %>%
-            mutate(intercept = 1) %>% as.matrix()
-    } else {
-        C <- matrix(1, nrow(plink.fam), 1)
-    }
-}
+stopifnot(all(!is.na(C)))
 
 log.msg('Found %d covaraites\n\n', ncol(C))
 Z.conf <- t(X) %*% C / sqrt(nrow(X))

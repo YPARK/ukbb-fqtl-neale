@@ -40,8 +40,8 @@ jobs/step3/%-fgwas-jobs:
 	@[ -d $(dir $@) ] || mkdir -p $(dir $@)
 	@printf "" > $@
 # observed
-	@for kk in $(K); do [ -f result/fgwas_nn/$${kk}/$*.zscore.gz ] || echo ./make.run-fgwas.R $(TEMPDIR)/$* 1KG_EUR/chr$(shell echo $* | awk -F'/' '{ print $$1 }') $${kk} TRUE result/conf/50/$*.conf-ind.gz result/conf/50/$*.conf-lodds.gz result/fgwas_nn/$${kk}/$* >> $@; done
-	@for kk in $(K); do [ -f result/fgwas/$${kk}/$*.zscore.gz ] || echo ./make.run-fgwas.R $(TEMPDIR)/$* 1KG_EUR/chr$(shell echo $* | awk -F'/' '{ print $$1 }') $${kk} FALSE result/conf/50/$*.conf-ind.gz result/conf/50/$*.conf-lodds.gz result/fgwas/$${kk}/$* >> $@; done
+	@for kk in $(K); do [ -f result/fgwas_nn/$${kk}/$*.zscore.gz ] || echo ./make.run-fgwas.R $(TEMPDIR)/$* 1KG_EUR/chr$(shell echo $* | awk -F'/' '{ print $$1 }') $${kk} TRUE result/conf/50/loco_$(shell echo $* | awk -F'/' '{ print $$1 }').txt.gz result/fgwas_nn/$${kk}/$* >> $@; done
+	@for kk in $(K); do [ -f result/fgwas/$${kk}/$*.zscore.gz ] || echo ./make.run-fgwas.R $(TEMPDIR)/$* 1KG_EUR/chr$(shell echo $* | awk -F'/' '{ print $$1 }') $${kk} FALSE result/conf/50/loco_$(shell echo $* | awk -F'/' '{ print $$1 }').txt.gz result/fgwas/$${kk}/$* >> $@; done
 # null
 	@for kk in $(K); do [ -f result/null-fgwas_nn/$${kk}/$*.zscore.gz ] || echo ./make.run-fgwas-null.R $(TEMPDIR)/$* 1KG_EUR/chr$(shell echo $* | awk -F'/' '{ print $$1 }') $${kk} TRUE result/null-fgwas_nn/$${kk}/$* >> $@; done
 	@for kk in $(K); do [ -f result/null-fgwas/$${kk}/$*.zscore.gz ] || echo ./make.run-fgwas-null.R $(TEMPDIR)/$* 1KG_EUR/chr$(shell echo $* | awk -F'/' '{ print $$1 }') $${kk} FALSE result/null-fgwas/$${kk}/$* >> $@; done

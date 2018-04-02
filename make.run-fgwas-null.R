@@ -164,7 +164,7 @@ beta.null <- make.zqtl.null(X = X, beta.mat = beta.mat, se.mat = se.mat, eig.tol
 
 ################################################################
 ## correct confounder
-vb.opt <- list(pi.ub = -1, pi.lb = -4, tau = -5, do.hyper = TRUE,
+vb.opt <- list(pi.ub = -1, pi.lb = -3, tau = -5, do.hyper = TRUE,
                do.stdize = TRUE, eigen.tol = 1e-2, gammax = 1e4,
                svd.init = TRUE, jitter = 0.1, vbiter = 5000,
                tol = 1e-8, rate = 1e-2, right.nn = FALSE,
