@@ -11,7 +11,7 @@ library(readr)
     return(ret)
 }
 
-.read.conf <- function(hdr, chr, cutoff = log(0.25) - log(0.75)) {
+.read.conf <- function(hdr, chr, cutoff = log(0.9) - log(0.1)) {
 
     ## log.msg('Reading %s\n', hdr)
 
@@ -47,11 +47,11 @@ library(readr)
 
 .reduce.join <- function(...) Reduce(..., f = .join, init = NULL)
 
-read.chr <- function(chr, K) {
+read.chr <- function(chr, ddir) {
     
     log.msg('Reading %d\n', chr)
 
-    data.dir <- 'result/conf/' %&&% K %&&% '/' %&&% chr %&&% '/'
+    data.dir <- ddir %&&% '/' %&&% chr %&&% '/'
     
     file.hdr.list <- list.files(path = data.dir, pattern = '.conf-lodds.gz', full.names = TRUE) %>%
         gsub(pattern = '[.]conf-lodds.gz', replacement = '')
@@ -62,13 +62,56 @@ read.chr <- function(chr, K) {
     return(conf.tab %>% as.data.frame())
 }
 
-conf.chr.list <- lapply(1:22, read.chr, K = 50)
+find.loco <- function(chr, data.list, p.val.cutoff) {
 
-## leave one chromosome out
-ret.loco.list <- lapply(1:22, function(chr) .reduce.join(conf.chr.list[-chr]))
-loco.files <- 'result/conf/50/loco_' %&&% 1:22 %&&% '.txt.gz'
+    .search.other <- function(other, self) {
 
-dir.create('result/conf/50/', recursive = TRUE)
+        iid <- self[, 1]
+        iid.other <- match(iid, other[, 1])
+        ret0 <- other %c% 1
 
-temp <- sapply(1:22, function(chr) write_tsv(ret.loco.list[[chr]], loco.files[chr]))
+        stat <- calc.qtl.stat(other %r% iid.other %c% -1, self %c% -1) %>%
+            filter(p.val < p.val.cutoff)
+
+        if(nrow(stat) < 1) return(ret0)
+
+        ret <- cbind(ret0, other %c% (1 + stat$x.col))
+        log.msg('Found %d LOCO\n', ncol(ret) - 1)
+        return(ret)
+    }
+
+    loco <- lapply(data.list[-chr], .search.other, self = data.list[[chr]]) %>%
+        .reduce.join()
+
+    log.msg('Constructed %d LOCO on chr%d\n', ncol(loco) - 1, chr)
+
+    return(loco)
+}
+
+
+################################################################
+conf.chr.list <- lapply(1:22, read.chr, ddir = 'result/conf/Q/30')
+n.conf <- sum(sapply(conf.chr.list, ncol) - 1)
+cutoff <- 0.05/n.conf
+
+for(chr in 1:22) {
+    loco.file <- 'result/conf/Q/30/loco_' %&&% chr %&&% '.txt.gz'
+    if(!file.exists(loco.file)) {
+        out <- find.loco(chr, data.list = conf.chr.list, p.val.cutoff = cutoff)
+        write_tsv(out, loco.file)
+    }
+}
+
+################################################################
+conf.chr.list <- lapply(1:22, read.chr, ddir = 'result/conf/CC/30')
+n.conf <- sum(sapply(conf.chr.list, ncol) - 1)
+cutoff <- 0.05/n.conf
+
+for(chr in 1:22) {
+    loco.file <- 'result/conf/CC/30/loco_' %&&% chr %&&% '.txt.gz'
+    if(!file.exists(loco.file)) {
+        out <- find.loco(chr, data.list = conf.chr.list, p.val.cutoff = cutoff)
+        write_tsv(out, loco.file)
+    }
+}
 

@@ -2,12 +2,13 @@
 
 argv <- commandArgs(trailingOnly = TRUE)
 
-if(length(argv) != 4) q()
+if(length(argv) != 5) q()
 
 in.dir <- argv[1]               # e.g., in.dir = 'data/1/1/'
 plink.hdr <- argv[2]            # e.g., plink.hdr = '1KG_EUR/chr1'
 re.K <- as.integer(argv[3])     # e.g., re.K = 50
-out.hdr <- argv[4]              # e.g., out.hdr = 'temp'
+pheno.file <- argv[4]           # e.g., 'phenotypes/ukbb_pheno.txt'
+out.hdr <- argv[5]              # e.g., out.hdr = 'temp'
 
 options(stringsAsFactors = FALSE)
 source('util.R')
@@ -29,7 +30,7 @@ library(dplyr)
 library(tidyr)
 library(zqtl)
 
-traits <- read_tsv('phenotypes/ukbb_pheno.txt') %>%
+traits <- read_tsv(pheno.file) %>%
     select(Field.code) %>%
         unlist(use.names = FALSE) %>%
             unique() %>% sort()
@@ -139,9 +140,9 @@ log.msg('Constructed data\n\n')
 re.K <- max(min(c(length(traits) - 1, ncol(X) - 1, re.K)), 1)
 
 ## Just run factorization to check if there were any confounders
-vb.opt <- list(pi.ub = -1, pi.lb = -4, tau = -5, do.hyper = TRUE,
-               right.nn = FALSE, do.rescale = TRUE, do.stdize = TRUE,
-               eigen.tol = 1e-2, gammax = 1e4, vbiter = 5000,
+vb.opt <- list(pi.ub = -1, pi.lb = -3, tau = -5, do.hyper = TRUE,
+               right.nn = FALSE, do.stdize = TRUE, do.rescale = TRUE, 
+               eigen.tol = 1e-1, gammax = 1e3, vbiter = 5000,
                svd.init = TRUE, jitter = 0.1,
                tol = 1e-8, rate = 1e-2, k = re.K)
 
