@@ -2,14 +2,15 @@
 
 argv <- commandArgs(trailingOnly = TRUE)
 
-if(length(argv) != 6) q()
+if(length(argv) != 7) q()
 
 in.dir <- argv[1]               # e.g., in.dir = 'data/1/1/'
 plink.hdr <- argv[2]            # e.g., plink.hdr = '1KG_EUR/chr1'
 K.max <- as.integer(argv[3])    # e.g., K.max = 50
 NON.NEG <- as.logical(argv[4])  # e.g., NON.NEG = FALSE
 conf.file <- argv[5]            # e.g., conf.file = 'result/conf/50/loco_1.gz'
-out.hdr <- argv[6]              # e.g., out.hdr = 'temp'
+pheno.file <- argv[6]           # e.g., 'phenotypes/ukbb_pheno.txt'
+out.hdr <- argv[7]              # e.g., out.hdr = 'temp'
 
 options(stringsAsFactors = FALSE)
 source('util.R')
@@ -33,7 +34,7 @@ library(dplyr)
 library(tidyr)
 library(zqtl)
 
-traits <- read_tsv('phenotypes/ukbb_pheno.txt') %>%
+traits <- read_tsv(pheno.file) %>%
     select(Field.code) %>%
         unlist(use.names = FALSE) %>%
             unique() %>% sort()
@@ -172,18 +173,21 @@ C <- plink.fam %>% select(iid) %>%
 
 stopifnot(all(!is.na(C)))
 
+n <- nrow(X)
+z.conf.0 <- t(X) %*% matrix(1, n, 1) / sqrt(n)
+
 log.msg('Found %d covaraites\n\n', ncol(C))
 Z.conf <- t(X) %*% C / sqrt(nrow(X))
+Z.conf <- cbind(Z.conf, z.conf.0)
 
 ################################################################
 K <- max(min(c(length(traits) - 1, ncol(X) - 1, K.max)), 1)
 
-vb.opt <- list(pi.ub = -1, pi.lb = -3, tau = -5, do.hyper = TRUE,
+vb.opt <- list(pi = -1, tau = -5, do.hyper = FALSE,
                do.stdize = TRUE, eigen.tol = 1e-2, gammax = 1e4,
                svd.init = TRUE, do.rescale = TRUE,
-               jitter = 0.1, vbiter = 5000,
-               tol = 1e-8, rate = 1e-2, right.nn = NON.NEG,
-               k = K)
+               jitter = 0.1, vbiter = 5000, rate = 1e-2, decay = -1e-2,
+               tol = 0, right.nn = NON.NEG, k = K)
 
 z.out <- fit.zqtl(effect = beta.mat, effect.se = se.mat,
                   X = X, C.delta = Z.conf, factored = TRUE,
@@ -240,7 +244,9 @@ if(nrow(left.tab) > 0){
     left.tab <- data.frame()
 }
 
-conf.assoc.tab <- melt.effect(z.out$conf.delta, 1:ncol(C), traits) %>%
+n.c <- ncol(Z.conf)
+
+conf.assoc.tab <- melt.effect(z.out$conf.delta, 1:n.c, traits) %>%
     rename(theta.se = theta.var, conf = row, trait = col) %>%
         mutate(theta.se = signif(sqrt(theta.se), 2)) %>%
             as.data.frame()

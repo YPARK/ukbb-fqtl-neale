@@ -164,29 +164,32 @@ beta.null <- make.zqtl.null(X = X, beta.mat = beta.mat, se.mat = se.mat, eig.tol
 
 ################################################################
 ## correct confounder
-vb.opt <- list(pi.ub = -1, pi.lb = -3, tau = -5, do.hyper = TRUE,
-               do.stdize = TRUE, eigen.tol = 1e-2, gammax = 1e4,
-               svd.init = TRUE, jitter = 0.1, vbiter = 5000,
-               tol = 1e-8, rate = 1e-2, right.nn = FALSE,
-               k = K)
+vb.opt <- list(pi.ub = -1, pi.lb = -4, tau = -5, do.hyper = TRUE,
+               right.nn = FALSE, do.rescale = TRUE, do.stdize = TRUE,
+               eigen.tol = 1e-1, gammax = 1e3, vbiter = 5000,
+               svd.init = TRUE, jitter = 0.1,
+               tol = 1e-8, rate = 1e-2, k = 10)
 
 z.fact.out <- fit.zqtl.factorize(beta.null, se.mat, X, options = vb.opt)
 
 cutoff <- log(0.9) - log(0.1)
 valid <- which(z.fact.out$param.trait$lodds > cutoff)
 
+n <- nrow(X)
+z.conf.0 <- t(X) %*% matrix(1, n, 1) / sqrt(n)
+
 if(length(valid) < 1) {
-    n <- nrow(X)
-    Z.conf <- t(X) %*% matrix(1, n, 1) / sqrt(n)
+    Z.conf <- z.conf.0
 } else {
     Z.conf <- t(X) %*% (z.fact.out$param.indiv$theta %c% valid) / sqrt(nrow(X))
+    Z.conf <- cbind(Z.conf, z.conf.0))
 }
 
 ## fit the model
-vb.opt <- list(pi.ub = -1, pi.lb = -3, tau = -5, do.hyper = TRUE,
-               do.stdize = TRUE, eigen.tol = 1e-2, gammax = 1e4,
+vb.opt <- list(pi.ub = -1, pi.lb = -4,, pi.lb = -4, tau = -5, do.hyper = TRUE,
+               do.stdize = TRUE, eigen.tol = 1e-1, gammax = 1e3,
                svd.init = TRUE, do.rescale = TRUE,
-               jitter = 0.1, vbiter = 5000,
+               jitter = 0.1, vbiter = 5000, rate = 1e-2, deacy = -1e-2,
                tol = 1e-8, rate = 1e-2, right.nn = NON.NEG,
                k = K)
 

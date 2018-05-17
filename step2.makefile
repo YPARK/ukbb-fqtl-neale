@@ -5,9 +5,12 @@ LD := ldblocks/EUR/fourier_ls-all.bed
 TEMPDIR := ./data
 UKBB_Neale := ukbiobank_summary
 
-all: phenotypes/ukbb_pheno.txt
+all: phenotypes/ukbb_pheno_cc.txt phenotypes/ukbb_pheno_quant.txt
 
-phenotypes/ukbb_pheno.txt:
+phenotypes/ukbb_pheno_quant.txt: phenotypes/ukbb_pheno_cc.txt
+	echo $@
+
+phenotypes/ukbb_pheno_cc.txt:
 	[ -d $(dir $@) ] || mkdir -p $(dir $@)
 	R --vanilla < make.ukbb-pheno.R
 

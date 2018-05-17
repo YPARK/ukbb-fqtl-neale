@@ -72,24 +72,23 @@ snp.file <- out.hdr %&&% '_snps.txt.gz'
 total.blks <- do.call(c, lapply(1:22, .list.files)) %>%
     sapply(gsub, pattern = '.zscore.gz', replacement = '')
 
-trait.tab <- do.call(rbind, lapply(total.blks, .take.trait.tab, lodds.cutoff = lodds.cutoff))
-log.msg('Read traits\n')
-write_tsv(trait.tab, path = trait.file)
-rm(trait.tab); gc();
+if(!file.exists(trait.file)) {
+    trait.tab <- do.call(rbind, lapply(total.blks, .take.trait.tab, lodds.cutoff = lodds.cutoff))
+    log.msg('Read traits\n')
+    write_tsv(trait.tab, path = trait.file)
+    rm(trait.tab); gc();
+}
 
-trait.tot.tab <- do.call(rbind, lapply(total.blks, .take.trait.tab, lodds.cutoff = -Inf))
-log.msg('Read traits-tot\n')
-write_tsv(trait.tot.tab, path = trait.full.file)
-rm(trait.tot.tab); gc();
+if(!file.exists(var.file)) {
+    var.tot.tab <- do.call(rbind, lapply(total.blks, .take.var.tab))
+    log.msg('Read var\n')
+    write_tsv(var.tot.tab, path = var.file)
+    rm(var.tot.tab); gc();
+}
 
-var.tot.tab <- do.call(rbind, lapply(total.blks, .take.var.tab))
-log.msg('Read var\n')
-write_tsv(var.tot.tab, path = var.file)
-rm(var.tot.tab); gc();
-
-
-snp.tab <- do.call(rbind, lapply(total.blks, .take.snp.tab))
-log.msg('Read SNPs\n')
-write_tsv(snp.tab, path = snp.file)
-
+if(!file.exists(snp.file)) {
+    snp.tab <- do.call(rbind, lapply(total.blks, .take.snp.tab, lodds.cutoff = lodds.cutoff))
+    log.msg('Read SNPs\n')
+    write_tsv(snp.tab, path = snp.file)
+}
 

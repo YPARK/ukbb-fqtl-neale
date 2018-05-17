@@ -143,6 +143,11 @@ fast.z.cov <- function(x, y) {
     return(ret)
 }
 
+## convert z-score to p-values (two-sided test)
+zscore.pvalue <- function(z) {
+    2 * pnorm(abs(z), lower.tail = FALSE)
+}
+
 ## calculate univariate effect sizes and p-values
 calc.qtl.stat <- function(xx, yy) {
 
@@ -152,11 +157,11 @@ calc.qtl.stat <- function(xx, yy) {
     .xx <- scale(xx)
     .yy <- scale(yy)
 
+    rm.na.zero <- function(x) replace(x, is.na(x), 0)
+
     ## cross-product is much faster than covariance function
     n.obs <- crossprod(!is.na(.xx), !is.na(.yy))
     beta.mat <- crossprod(.xx %>% rm.na.zero(), .yy %>% rm.na.zero()) / n.obs
-
-    log.msg('Computed cross-products')
 
     ## residual standard deviation
     resid.se.mat <- matrix(NA, ncol(.xx), ncol(.yy))
@@ -168,7 +173,7 @@ calc.qtl.stat <- function(xx, yy) {
         err.k <- sweep(sweep(.xx, 2, beta.k, `*`), 1, yy.k, `-`)
         se.k <- apply(err.k, 2, sd, na.rm = TRUE)
 
-        log.msg('Residual on the column %d', k)
+        ## log.msg('Residual on the column %d\n', k)
         resid.se.mat[, k] <- se.k + 1e-8
     }
 

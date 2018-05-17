@@ -18,8 +18,8 @@ out.tab <- pheno.tab %>%
     filter(N.non.missing > 1e5, is.na(N.cases), is.na(N.controls)) %>%
         select(- starts_with('PHESANT'), - warning.for.case.control)
 
-write_tsv(out.tab, path = 'phenotypes/ukbb_pheno_quant.txt')
-write.xlsx(out.tab, 'phenotypes/ukbb_pheno_quant.xlsx', sheetName = 'quantitative')
+write_tsv(out.tab, path = 'phenotypes/ukbb_pheno_Q.txt')
+write.xlsx(out.tab, 'phenotypes/ukbb_pheno_Q.xlsx', sheetName = 'quantitative')
 
 
 ## case-control
@@ -27,6 +27,6 @@ out.tab <- pheno.tab %>%
     filter(N.non.missing > 1e5, N.cases > 1e4, is.na(warning.for.case.control)) %>%
         select(- starts_with('PHESANT'), - warning.for.case.control)        
 
-write_tsv(out.tab, path = 'phenotypes/ukbb_pheno_cc.txt')
-write.xlsx(out.tab, 'phenotypes/ukbb_pheno_cc.xlsx', sheetName = 'case_control')
+write_tsv(out.tab, path = 'phenotypes/ukbb_pheno_CC.txt')
+write.xlsx(out.tab, 'phenotypes/ukbb_pheno_CC.xlsx', sheetName = 'case_control')
 
