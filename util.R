@@ -20,6 +20,10 @@ glue <- function(...) paste(..., sep = '')
     matrix(rnorm(nrow * ncol), nrow, ncol)
 }
 
+center <- function(...) scale(..., center = TRUE, scale = FALSE)
+
+.unlist <- function(...) unlist(..., use.names = FALSE)
+
 .sample <- function(nrow, ncol, pop = c(1,-1)) {
     matrix(sample(pop, nrow * ncol, TRUE), nrow, ncol)
 }
