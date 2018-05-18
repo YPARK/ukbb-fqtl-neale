@@ -1,4 +1,4 @@
-#!/usr/bin/Rscript
+#!/usr/bin/env Rscript
 
 argv <- commandArgs(trailingOnly = TRUE)
 
@@ -48,6 +48,8 @@ fgwas.tab <- read_tsv(fgwas.file, col_types = 'iiicidddicc')
 n.sig.snps <- fgwas.tab %>% filter(lodds > lodds.cutoff) %>% nrow()
 if(n.sig.snps < 1) {
     write_tsv(data.frame(), path = out.file)
+    system('rm -r ' %&&% temp.dir)
+    log.msg('No significant SNPs!\n')
     q()
 }
 
@@ -70,6 +72,13 @@ gtex.stat <- read_tsv(gtex.file, col_names = gtex.cols) %>%
         filter(tss > (lb.input - cis.dist), tss < (ub.input + cis.dist)) %>%
             filter(.cutoff == pip.cutoff)
 
+if(nrow(gtex.stat) < 1) {
+    write_tsv(data.frame(), path = out.file)
+    system('rm -r ' %&&% temp.dir)
+    log.msg('No GTEx SNPs!\n')
+    q()
+}
+
 make.twas <- function(gg, gtex.valid.tab, gwas.z.tab, svd.out) {
 
     #############
@@ -78,7 +87,7 @@ make.twas <- function(gg, gtex.valid.tab, gwas.z.tab, svd.out) {
 
     n.cutoff <- 10
     n.perm <- 5e7
-    n.blk <- 2048
+    n.blk <- 1024
     n.round <- ceiling(n.perm/n.blk)
 
     tss <- gtex.valid.tab[gg, 'tss'] %>% as.integer()
@@ -166,7 +175,7 @@ run.twas.factor <- function(ff, fgwas.tab, gwas.z.tab, plink, svd.out) {
     .xx[is.na(.xx)] <- 0
 
     .zz <- t(.xx) %*% .eta.k / sqrt(nrow(.xx))
-    .zz <- center(.zz) 
+    .zz <- center(.zz)
 
     gwas.z.tab <-
         x.bim %>%
@@ -193,6 +202,13 @@ run.twas.factor <- function(ff, fgwas.tab, gwas.z.tab, plink, svd.out) {
 
 valid.gwas.factors <- fgwas.tab %>% filter(lodds > lodds.cutoff) %>%
     select(factor) %>% unique() %>% .unlist()
+
+if(length(valid.gwas.factors) < 1) {
+    write_tsv(data.frame(), path = out.file)
+    system('rm -r ' %&&% temp.dir)
+    log.msg('No GTEx factors!\n')
+    q()
+}
 
 out.tab <- lapply(valid.gwas.factors,
                   run.twas.factor,
