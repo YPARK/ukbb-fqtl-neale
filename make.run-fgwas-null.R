@@ -2,37 +2,40 @@
 
 argv <- commandArgs(trailingOnly = TRUE)
 
-if(length(argv) != 5) q()
+if(length(argv) != 6) q()
 
 in.dir <- argv[1]               # e.g., in.dir = 'data/1/1/'
 plink.hdr <- argv[2]            # e.g., plink.hdr = '1KG_EUR/chr1'
 K.max <- as.integer(argv[3])    # e.g., K.max = 50
 NON.NEG <- as.logical(argv[4])  # e.g., NON.NEG = TRUE
-out.hdr <- argv[5]              # e.g., out.hdr = 'temp'
+pheno.file <- argv[5]           # e.g., 'phenotypes/ukbb_pheno.txt'
+out.hdr <- argv[6]              # e.g., out.hdr = 'temp'
 
 options(stringsAsFactors = FALSE)
 source('util.R')
+source('util.fgwas.R')
+library(dplyr)
+library(tidyr)
+library(readr)
+library(zqtl)
 
 dir.create(dirname(out.hdr), recursive = TRUE, showWarnings = FALSE)
 snp.factor.file <- out.hdr %&&% '.snp-factor.gz'
 trait.factor.file <- out.hdr %&&% '.trait-factor.gz'
-zscore.file <- out.hdr %&&% '.zscore.gz'
 var.file <- out.hdr %&&% '.var.gz'
-conf.out.file <- out.hdr %&&% '.conf.gz'
 
-.files <- c(snp.factor.file, trait.factor.file, zscore.file, var.file, conf.out.file)
+.files <- c(snp.factor.file, trait.factor.file, var.file)
 
 if(all(sapply(.files, file.exists))) {
     log.msg('Files exists:\n%s\n', paste(.files, collapse = '\n'))
     q()
 }
 
-library(readr)
-library(dplyr)
-library(tidyr)
-library(zqtl)
 
-traits <- read_tsv('phenotypes/ukbb_pheno.txt') %>%
+
+
+
+traits <- read_tsv(pheno.file) %>%
     select(Field.code) %>%
         unlist(use.names = FALSE) %>%
             unique() %>% sort()

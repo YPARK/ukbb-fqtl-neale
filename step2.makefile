@@ -5,14 +5,17 @@ LD := ldblocks/EUR/fourier_ls-all.bed
 TEMPDIR := ./data
 UKBB_Neale := ukbiobank_summary
 
-all: phenotypes/ukbb_pheno_cc.txt phenotypes/ukbb_pheno_quant.txt
+all: phenotypes/ukbb_pheno_CC.txt phenotypes/ukbb_pheno_Q.txt phenotypes/ukbb_pheno_combined.txt
 
-phenotypes/ukbb_pheno_quant.txt: phenotypes/ukbb_pheno_cc.txt
+phenotypes/ukbb_pheno_Q.txt: phenotypes/ukbb_pheno_CC.txt
 	echo $@
 
-phenotypes/ukbb_pheno_cc.txt:
+phenotypes/ukbb_pheno_CC.txt:
 	[ -d $(dir $@) ] || mkdir -p $(dir $@)
 	R --vanilla < make.ukbb-pheno.R
+
+phenotypes/ukbb_pheno_combined.txt: phenotypes/ukbb_pheno_CC.txt phenotypes/ukbb_pheno_Q.txt
+	cat $^ | awk 'NR == 1 || $$1 != "Field.code"' > $@
 
 PHENONAMES := $(shell [ -f phenotypes/ukbb_pheno.txt ] && tail -n+2 phenotypes/ukbb_pheno.txt | cut -f1)
 

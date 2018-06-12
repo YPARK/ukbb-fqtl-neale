@@ -43,7 +43,7 @@ temp.dir <- system('mkdir -p /broad/hptmp/ypp/ukbb-twas/' %&&%
 
 pip.cutoff <- 0.5
 lodds.cutoff <- log(pip.cutoff) - log(1 - pip.cutoff)
-fgwas.tab <- read_tsv(fgwas.file, col_types = 'iiicidddicc')
+fgwas.tab <- read_tsv(fgwas.file, col_types = 'iiiiiicidddicc')
 
 n.sig.snps <- fgwas.tab %>% filter(lodds > lodds.cutoff) %>% nrow()
 if(n.sig.snps < 1) {
@@ -189,6 +189,8 @@ run.twas.factor <- function(ff, fgwas.tab, gwas.z.tab, plink, svd.out) {
     gtex.valid <- valid.gtex.factors %>%
         left_join(gtex.stat)
 
+    if(nrow(gtex.valid) < 1) return(NULL)
+
     gg.vec <- 1:nrow(gtex.valid)
 
     ret <- lapply(gg.vec, make.twas,
@@ -217,8 +219,12 @@ out.tab <- lapply(valid.gwas.factors,
                   plink = plink,
                   svd.out = svd.out)
 
-out.tab <- out.tab %>% bind_rows() %>%
-    mutate(chr = chr.input, LB = lb.input, UB = ub.input)
+out.tab <- out.tab %>% bind_rows()
+
+if(nrow(out.tab) > 0) {
+    out.tab <- out.tab %>%
+        mutate(chr = chr.input, LB = lb.input, UB = ub.input, ld.idx = ld.idx)
+}
 
 write_tsv(out.tab, path = out.file)
 system('rm -r ' %&&% temp.dir)

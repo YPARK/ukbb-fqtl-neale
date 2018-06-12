@@ -4,9 +4,9 @@ argv <- commandArgs(trailingOnly = TRUE)
 
 if(length(argv) < 3) q()
 
-result.dir <- argv[1]               # e.g., 'result/fgwas_nn/50_5/'
-lodds.cutoff <- as.numeric(argv[2]) # e.g., 
-out.hdr <- argv[3]                  # e.g., 'output'
+result.dir <- argv[1]               # e.g., result.dir = 'result/fgwas_nn/100/Q/'
+lodds.cutoff <- as.numeric(argv[2]) # e.g., lodds.cutoff = 0
+out.hdr <- argv[3]                  # e.g., out.hdr = 'temp'
 
 source('util.R')
 library(dplyr)
@@ -23,6 +23,7 @@ snp.file <- out.hdr %&&% '_snps.txt.gz'
 .take.trait.tab <- function(.blk, lodds.cutoff = 0) {
 
     .trait.file <- .blk %&&% '.trait-factor.gz'
+    .blk.idx <- .blk %>% basename() %>% as.integer()
 
     if(!file.exists(.trait.file)) return(NULL)
 
@@ -37,11 +38,12 @@ snp.file <- out.hdr %&&% '_snps.txt.gz'
 
     .snp.tab <- suppressMessages(read_tsv(.snp.file, col_names= TRUE) %>%
                                      dplyr::filter(lodds > lodds.cutoff))
-    
-    if(nrow(.snp.tab) > 0) {        
-        .factors <- .snp.tab %>% dplyr::select(factor) %>% unique()        
+
+    if(nrow(.snp.tab) > 0) {
+        .factors <- .snp.tab %>% dplyr::select(factor) %>% unique()
         .trait.tab <- suppressMessages(read_tsv(.trait.file, col_names = TRUE) %>%
                                            dplyr::filter(factor %in% .factors$factor))
+        .trait.tab <- .trait.tab %>% mutate(ld.idx = .blk.idx)
         return(.trait.tab %>% as.data.frame())
     }
     return(NULL)
@@ -49,21 +51,26 @@ snp.file <- out.hdr %&&% '_snps.txt.gz'
 
 .take.var.tab <- function(.blk) {
     .var.file <- .blk %&&% '.var.gz'
+    .blk.idx <- .blk %>% basename() %>% as.integer()
+
     if(!file.exists(.var.file)) return(NULL)
     .var.tab <- suppressMessages(read_tsv(.var.file, col_names = TRUE, col_types = 'iiiccd'))
+    .var.tab <- .var.tab %>% mutate(ld.idx = .blk.idx)
     return(.var.tab %>% as.data.frame())
 }
 
 .take.snp.tab <- function(.blk, lodds.cutoff = 0) {
     .snp.file <- .blk %&&% '.snp-factor.gz'
+    .blk.idx <- .blk %>% basename() %>% as.integer()
+
     if(!file.exists(.snp.file)) return(NULL)
 
     .snp.tab <- suppressMessages(read_tsv(.snp.file, col_names= TRUE) %>%
                                      dplyr::filter(lodds > lodds.cutoff))
-    
-    if(nrow(.snp.tab) > 0) {        
+    if(nrow(.snp.tab) > 0) {
         return(.snp.tab)
     }
+    .snp.tab <- .snp.tab %>% mutate(ld.idx = .blk.idx)
     return(NULL)
 }
 
@@ -91,4 +98,3 @@ if(!file.exists(snp.file)) {
     log.msg('Read SNPs\n')
     write_tsv(snp.tab, path = snp.file)
 }
-

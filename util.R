@@ -51,6 +51,35 @@ melt.effect <- function(effect.obj, .rnames, .cnames) {
     return(ret)
 }
 
+read.ld.info <- function(ld.idx, ld.file, autosome.only = TRUE) {
+    require(dplyr)
+
+    ld.tab <- read.table(ld.file, header = TRUE) %>%
+        mutate(ld.idx = 1:n())
+
+    .chr.int <- function(x) gsub(x, pattern = 'chr', replacement = '')
+
+    if(autosome.only) {
+        .chr.int <- function(x) as.integer(gsub(x, pattern = 'chr', replacement = ''))
+    }
+
+    if(!is.null(ld.idx)) {
+        ld.tab <- ld.tab %>% (function(x) x[ld.idx, , drop = FALSE])
+        ret <- list(chr.input = ld.tab$chr %>% .chr.int(),
+                    lb.input = ld.tab$start %>% as.integer(),
+                    ub.input = ld.tab$stop %>% as.integer())
+    } else {
+        ret <- ld.tab %>%
+            mutate(chr.input = .chr.int(chr),
+                   lb.input = as.integer(start),
+                   ub.input = as.integer(stop))
+
+        ret <- ret %>% na.omit() %>%
+            select(ld.idx, chr.input, lb.input, ub.input)
+    }
+    return(ret)
+}
+
 ################################################################
 subset.plink <- function(plink.hdr, chr, plink.lb, plink.ub, temp.dir) {
     require(zqtl)
@@ -90,7 +119,6 @@ subset.plink <- function(plink.hdr, chr, plink.lb, plink.ub, temp.dir) {
 
 ################################################################
 ## genrate theoretical null data
-
 make.zqtl.null <- function(X, beta.mat, se.mat, eig.tol, is.indep = FALSE, stdize = TRUE) {
     require(zqtl)
 
@@ -232,10 +260,9 @@ find.cor.idx <- function(Y1, Y0, n.ctrl, p.val.cutoff = 1) {
 
     require(dplyr)
 
-    y01.stat <- get.marginal.qtl(Y0, Y1) %>%
-        dplyr::rename(y0 = snp, y1 = gene) %>%
-            dplyr::mutate(p.val = 2 * pnorm(abs(beta.z), lower.tail = FALSE)) %>%
-                dplyr::filter(p.val < p.val.cutoff)
+    y01.stat <- calc.qtl.stat(Y0, Y1) %>%
+        dplyr::rename(y0 = x.col, y1 = y.col) %>%
+            dplyr::filter(p.val < p.val.cutoff)
 
     ret <- y01.stat %>% dplyr::group_by(y1) %>%
         dplyr::top_n(n = -n.ctrl, wt = p.val)
