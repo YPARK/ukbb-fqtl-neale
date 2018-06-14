@@ -137,7 +137,7 @@ construct.data.matrix <- function(stat.tab, plink.obj, traits) {
     return(ret)
 }
 
-estimate.variance <- function(z.out, se.mat) {
+estimate.variance <- function(z.out, traits, se.mat = NULL) {
 
     require(dplyr)
     require(Matrix)
@@ -147,24 +147,52 @@ estimate.variance <- function(z.out, se.mat) {
     theta.snp <- z.out$param.left$theta
     theta.trait <- z.out$param.right$theta
 
+    scale.se <- if_else(is.null(se.mat), FALSE, TRUE)
+
+    n <- nrow(z.out$U)
+    snUD <- sqrt(n) * sweep(z.out$U, 2, sqrt(z.out$D2), `*`)
+
     take.var.k <- function(k) {
 
         theta.k <- (theta.snp %c% k) %*% t(theta.trait %c% k)
-        theta.k <- theta.k * se.mat ## scale by SE
-        eta.k <- sweep(z.out$Vt %*% theta.k, 1, sqrt(z.out$D2), `*`)
-        var.k <- apply(eta.k^2, 2, sum)
+        if(scale.se) {
+            theta.k <- theta.k * se.mat ## scale by SE
+        }
+        eta.k <- z.out$Vt %*% theta.k
+        eta.k <- snUD %*% eta.k
+        var.k <- apply(eta.k, 2, var)
 
-        return(data.frame(trait = as.character(names(var.k)), factor = k, var = var.k))
+        return(data.frame(trait = as.character(traits), factor = k, var = var.k))
     }
 
-    theta.tot <- (theta.snp %*% t(theta.trait)) * se.mat ## scale by SE
-    eta.tot <- sweep(z.out$Vt %*% theta.tot, 1, sqrt(z.out$D2), `*`)
-    var.tot <- data.frame(trait = as.character(traits),
-                          factor = 'total',
-                          var = apply(eta.tot^2, 2, sum))
     var.tab <- bind_rows(lapply(1:K, take.var.k))
     rownames(var.tab) <- NULL
-    var.tab <- rbind(var.tab, var.tot) %>%
+
+    theta.tot <- theta.snp %*% t(theta.trait)
+    if(scale.se) {
+        theta.tot <- theta.tot * se.mat ## scale by SE
+    }
+    eta.tot <- z.out$Vt %*% theta.tot
+    eta.tot <- snUD %*% eta.tot
+    var.tot <- data.frame(trait = as.character(traits),
+                          factor = 'total',
+                          var = apply(eta.tot, 2, var))
+
+    ## Variance of confounding factors
+    ## Z.conf = Xt * C / sqrt(n)
+    ## VtCd   = Vt * Z.conf
+    ##        = Vt * (V * D * Ut) * C
+    ##        = D * Ut * C / sqrt(n)
+    ##
+    ## eta.c  = C * theta
+    ##        = U * inv(D) * VtCd * theta
+    UinvD <- sweep(z.out$U, 2, sqrt(z.out$D2), `/`)
+    eta.conf <- UinvD %*% z.out$VtCd %*% z.out$conf.delta$theta
+    var.conf <- data.frame(trait = as.character(traits),
+                           factor = 'conf',
+                           var = apply(eta.conf, 2, var))
+
+    var.tab <- rbind(var.tab, var.conf, var.tot) %>%
         mutate(var = signif(var, 4))
 
     log.msg('Calculated Variance\n\n')
