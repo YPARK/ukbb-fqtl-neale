@@ -129,7 +129,7 @@ K <- max(min(c(length(traits) - 1, ncol(gwas.data$X) - 1, K)), 1)
 vb.opt <- list(pi.ub = -0.1, pi.lb = -3, tau = -5, do.hyper = TRUE,
                do.stdize = TRUE, eigen.tol = 1e-2, gammax = 1e2,
                svd.init = TRUE, do.rescale = TRUE,
-               jitter = 0.1, vbiter = 7500, rate = 1e-2, decay = -1e-2,
+               jitter = 0.1, vbiter = 5000, rate = 1e-2, decay = -1e-2,
                tol = 0, right.nn = non.neg, k = K)
 
 z.out <- fit.zqtl(effect = gwas.data$beta, effect.se = gwas.data$se,
