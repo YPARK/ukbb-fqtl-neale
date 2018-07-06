@@ -55,9 +55,7 @@ queue_summary: $(foreach k, 350, jobs/20180608/summary-$(k).txt.gz)
 
 jobs/20180608/summary-%.txt.gz:
 	@[ -d $(dir $@) ] || mkdir -p $(dir $@)
-	echo "./make.combine-fgwas.R $(RDIR)/fgwas/$*/ $(LD) 0.5 $(RDIR)/fgwas-$*-05.txt.gz" | gzip > $@
-	echo "./make.combine-fgwas.R $(RDIR)/fgwas/$*/ $(LD) 0.9 $(RDIR)/fgwas-$*-09.txt.gz" | gzip >> $@
-	echo "./make.combine-fgwas.R $(RDIR)/fgwas_nn/$*/ $(LD) 0.5 $(RDIR)/fgwas_nn-$*-05.txt.gz" | gzip >> $@
-	echo "./make.combine-fgwas.R $(RDIR)/fgwas_nn/$*/ $(LD) 0.9 $(RDIR)/fgwas_nn-$*-09.txt.gz" | gzip >> $@
+	echo "./make.combine-fgwas.R $(RDIR)/fgwas/$*/ $(LD) 0.9 $(RDIR)/fgwas-$*-09" | gzip >> $@
+	echo "./make.combine-fgwas.R $(RDIR)/fgwas_nn/$*/ $(LD) 0.9 $(RDIR)/fgwas_nn-$*-09" | gzip >> $@
 	qsub -P compbio_lab -o /dev/null -binding "linear:1" -cwd -V -l h_vmem=32g -l h_rt=1:30:00 -b y -j y -N UKBB_SUM_$* -t 1-$$(zcat $@ | wc -l) ./run_rscript.sh $@
 
