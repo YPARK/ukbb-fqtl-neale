@@ -9,14 +9,14 @@ if(length(argv) < 4) {
 result.dir <- argv[1]               # e.g., result.dir = 'result/20180613/fgwas/50/'
 ld.file <- argv[2]                  # e.g., ld.file = 'LD/fourier_ls-all.bed'
 pip.cutoff <- as.numeric(argv[3])   # e.g., pip.cutoff = 0.9
-out.file <- argv[4]                 # e.g., out.file = 'temp'
+out.hdr <- argv[4]                 # e.g., out.hdr = 'temp'
 
 source('util.R')
 library(dplyr)
 library(readr)
 library(tidyr)
 
-dir.create(dirname(out.file), recursive = TRUE, showWarnings = FALSE)
+dir.create(dirname(out.hdr), recursive = TRUE, showWarnings = FALSE)
 
 read.summary <- function(ld.idx, result.dir, lodds.cutoff) {
 
@@ -160,4 +160,8 @@ out.tab <-
                lodds.cutoff = log(pip.cutoff) - log(1 - pip.cutoff)) %>%
                    bind_rows()
 
-write_tsv(out.tab, out.file)
+for(.chr in 1:22){
+    out.file <- out.hdr %&&% '-chr' %&&% .chr %&&% '.txt.gz'
+    out.chr.tab <- out.tab %>% filter(chr == .chr)
+    write_tsv(out.chr.tab, out.file)
+}
