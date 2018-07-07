@@ -59,3 +59,16 @@ jobs/20180608/summary-%.txt.gz:
 	for((chr=1;chr<=22;++chr)); do echo "./make.combine-fgwas.R $(RDIR)/fgwas_nn/$*/ $(LD) $${chr} 0.9 $(RDIR)/fgwas_nn-$*-09-chr$${chr}.txt.gz" | gzip >> $@; done
 	qsub -P compbio_lab -o /dev/null -binding "linear:1" -cwd -V -l h_vmem=8g -l h_rt=1:30:00 -b y -j y -N UKBB_SUM_$* -t 1-$$(zcat $@ | wc -l) ./run_rscript.sh $@
 
+################################################################
+## even simpler summary for the number of SNPs
+queue_count: jobs/20180608/count-fgwas-350.txt.gz
+
+jobs/20180608/count-%.txt.gz:
+	@[ -d $(dir $@) ] || mkdir -p $(dir $@)
+	seq 1 $(nLD) | awk -vD=$(RDIR)/$(shell echo $* | sed 's/-/\//g') '{ print "./util_count_snps.sh" FS $$1 FS D FS D "/" $$1 ".snps" }' | gzip > $@
+	qsub -P compbio_lab -o /dev/null -binding "linear:1" -cwd -V -l h_vmem=1g -l h_rt=00:00:10 -b y -j y -N UKBB_COUNT_$* -t 1-$$(zcat $@ | wc -l) ./run_rscript.sh $@
+
+combine_count: $(RDIR)/fgwas-350-NSNPS.txt.gz
+
+$(RDIR)/%-NSNPS.txt.gz:
+	seq 1 $(nLD) | awk -vD=$(RDIR)/$(shell echo $* | sed 's/-/\//g') '{ file = D "/" $$1 ".snps"; ("cat " file | getline snps); print $$1 FS snps; }' | gzip > $@
