@@ -1,0 +1,9 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+6138_1	Qualifications: College or University degree	334070	3129	106305	227765	6138
+6138_100	Qualifications: None of the above	334070	3129	57567	276503	6138
+6138_2	Qualifications: A levels/AS levels or equivalent	334070	3129	91710	242360	6138
+6138_3	Qualifications: O levels/GCSEs or equivalent	334070	3129	159730	174340	6138
+6138_4	Qualifications: CSEs or equivalent	334070	3129	44362	289708	6138
+6138_5	Qualifications: NVQ or HND or HNC or equivalent	334070	3129	62848	271222	6138
+6138_6	Qualifications: Other professional qualifications eg: nursing, teaching	334070	3129	97524	236546	6138
+845	Age completed full time education	226899	110300	NA	NA	845

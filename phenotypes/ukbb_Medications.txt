@@ -1,0 +1,19 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+137	Number of treatments/medications taken	337159	40	NA	NA	137
+20003_1140852976	Treatment/medication code: multivitamins	337159	40	10402	326757	20003
+20003_1140860806	Treatment/medication code: ramipril	337159	40	15787	321372	20003
+20003_1140861958	Treatment/medication code: simvastatin	337159	40	38492	298667	20003
+20003_1140864752	Treatment/medication code: lansoprazole	337159	40	12071	325088	20003
+20003_1140865634	Treatment/medication code: omeprazole	337159	40	19668	317491	20003
+20003_1140866738	Treatment/medication code: atenolol	337159	40	13184	323975	20003
+20003_1140868226	Treatment/medication code: aspirin	337159	40	45012	292147	20003
+20003_1140871310	Treatment/medication code: ibuprofen	337159	40	41952	295207	20003
+20003_1140879802	Treatment/medication code: amlodipine	337159	40	13693	323466	20003
+20003_1140909674	Treatment/medication code: cod liver oil capsule	337159	40	19806	317353	20003
+20003_1141146234	Treatment/medication code: atorvastatin	337159	40	10167	326992	20003
+20003_1141188442	Treatment/medication code: glucosamine product	337159	40	22914	314245	20003
+20003_1141191044	Treatment/medication code: levothyroxine sodium	337159	40	13717	323442	20003
+20003_1141194794	Treatment/medication code: bendroflumethiazide	337159	40	19084	318075	20003
+20003_1193	Treatment/medication code: omega-3/fish oil supplement	337159	40	12924	324235	20003
+20003_2038460150	Treatment/medication code: paracetamol	337159	40	62050	275109	20003
+20003_99999	Treatment/medication code: Free-text entry, unable to be coded	337159	40	11362	325797	20003

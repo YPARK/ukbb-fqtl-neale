@@ -1,0 +1,5 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+2178	Overall health rating	336020	1179	NA	NA	2178
+2188	Long-standing illness, disability or infirmity	329663	7536	107123	222540	2188
+2296	Falls in the last year	336617	582	NA	NA	2296
+2306	Weight change compared with 1 year ago	331803	5396	NA	NA	2306

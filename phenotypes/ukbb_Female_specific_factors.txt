@@ -1,0 +1,21 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+2674	Ever had breast cancer screening / mammogram	180861	156338	146420	34441	2674
+2684	Years since last breast cancer screening / mammogram	108052	229147	NA	NA	2684
+2704	Years since last cervical smear test	139363	197836	NA	NA	2704
+2714	Age when periods started (menarche)	176008	161191	NA	NA	2714
+2724	Had menopause	152035	185164	111605	40430	2724
+2734	Number of live births	180952	156247	NA	NA	2734
+2744	Birth weight of first child	145558	191641	NA	NA	2744
+2754	Age at first live birth	123846	213353	NA	NA	2754
+2764	Age at last live birth	123676	213523	NA	NA	2764
+2774	Ever had stillbirth, spontaneous miscarriage or termination	178474	158725	56172	122302	2774
+2784	Ever taken oral contraceptive pill	180749	156450	149365	31384	2784
+2794	Age started oral contraceptive pill	144113	193086	NA	NA	2794
+2814	Ever used hormone-replacement therapy (HRT)	180631	156568	71377	109254	2814
+2834	Bilateral oophorectomy (both ovaries removed)	178676	158523	14702	163974	2834
+3591	Ever had hysterectomy (womb removed)	159679	177520	13060	146619	3591
+3710	Length of menstrual cycle	30245	306954	NA	NA	3710
+3829	Number of stillbirths	56069	281130	NA	NA	3829
+3839	Number of spontaneous miscarriages	55927	281272	NA	NA	3839
+3849	Number of pregnancy terminations	55742	281457	NA	NA	3849
+3872	Age of primiparous women at birth of child	23804	313395	NA	NA	3872

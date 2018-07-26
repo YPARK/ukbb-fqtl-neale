@@ -1,0 +1,6 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+22126	Doctor diagnosed hayfever or allergic rhinitis	83529	253670	18934	64595	22126
+22127	Doctor diagnosed asthma	83529	253670	10589	72940	22127
+22502	Cough on most days	83529	253670	11424	72105	22502
+22503	Years of cough on most days	11424	325775	NA	NA	22503
+22506_113	Tobacco smoking: Ex-smoker	83133	254066	30184	52949	22506

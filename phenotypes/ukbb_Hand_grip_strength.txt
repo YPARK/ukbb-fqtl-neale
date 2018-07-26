@@ -1,0 +1,3 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+46	Hand grip strength (left)	335821	1378	NA	NA	46
+47	Hand grip strength (right)	335842	1357	NA	NA	47

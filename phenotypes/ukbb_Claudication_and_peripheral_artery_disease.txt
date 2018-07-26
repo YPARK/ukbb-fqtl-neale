@@ -1,0 +1,4 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+4728	Leg pain on walking	110337	226862	24101	86236	4728
+5485	Leg pain when walking normally	23470	313729	13259	10211	5485
+5507	Leg pain on walking : action taken	23719	313480	NA	NA	5507

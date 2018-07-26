@@ -1,0 +1,3 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+2316	Wheeze or whistling in the chest in last year	331257	5942	68531	262726	2316
+4717	Shortness of breath walking on level ground	109508	227691	11459	98049	4717

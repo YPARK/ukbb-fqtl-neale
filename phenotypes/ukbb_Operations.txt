@@ -1,0 +1,4 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+136	Number of operations, self-reported	337159	40	NA	NA	136
+2415	Had major operations	155045	182154	99647	55398	2415
+2844	Had other major operations	179567	157632	120566	59001	2844

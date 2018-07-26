@@ -1,0 +1,8 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+1160	Sleep duration	335410	1789	NA	NA	1160
+1170	Getting up in morning	336501	698	NA	NA	1170
+1180	Morning/evening person (chronotype)	301143	36056	NA	NA	1180
+1190	Nap during day	337074	125	NA	NA	1190
+1200	Sleeplessness / insomnia	336965	234	NA	NA	1200
+1210	Snoring	314449	22750	117812	196637	1210
+1220	Daytime dozing / sleeping (narcolepsy)	336082	1117	NA	NA	1220

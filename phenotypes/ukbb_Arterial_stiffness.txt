@@ -1,0 +1,5 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+21021	Pulse wave Arterial Stiffness index	109813	227386	NA	NA	21021
+4194	Pulse rate	110153	227046	NA	NA	4194
+4195	Pulse wave reflection index	110153	227046	NA	NA	4195
+4196	Pulse wave peak to peak time	110099	227100	NA	NA	4196

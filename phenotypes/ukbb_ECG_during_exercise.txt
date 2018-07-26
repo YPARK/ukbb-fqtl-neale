@@ -1,0 +1,8 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+6015	Chest pain felt during physical activity	50451	286748	NA	NA	6015
+6016	Chest pain felt outside physical activity	50451	286748	NA	NA	6016
+6017	Able to walk or cycle unaided for 10 minutes	50451	286748	NA	NA	6017
+6032	Maximum workload during fitness test	49623	287576	NA	NA	6032
+6033	Maximum heart rate during fitness test	49610	287589	NA	NA	6033
+6038	Number of trend entries	49623	287576	NA	NA	6038
+6039	Duration of fitness test	49623	287576	NA	NA	6039

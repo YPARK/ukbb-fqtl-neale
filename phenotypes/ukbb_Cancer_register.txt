@@ -1,0 +1,2 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+40009	Reported occurrences of cancer	44805	292394	NA	NA	40009

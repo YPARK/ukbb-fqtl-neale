@@ -1,0 +1,3 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+2335	Chest pain or discomfort	334053	3146	51937	282116	2335
+3751	Chest pain or discomfort when walking uphill or hurrying	41494	295705	11056	30438	3751

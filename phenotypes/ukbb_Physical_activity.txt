@@ -1,0 +1,33 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+1001	Duration of strenuous sports	34342	302857	NA	NA	1001
+1011	Frequency of light DIY in last 4 weeks	169623	167576	NA	NA	1011
+1021	Duration of light DIY	168725	168474	NA	NA	1021
+1070	Time spent watching television (TV)	319740	17459	NA	NA	1070
+1080	Time spent using computer	261987	75212	NA	NA	1080
+1090	Time spent driving	224813	112386	NA	NA	1090
+1100	Drive faster than motorway speed limit	306030	31169	NA	NA	1100
+2624	Frequency of heavy DIY in last 4 weeks	137208	199991	NA	NA	2624
+2634	Duration of heavy DIY	137364	199835	NA	NA	2634
+3637	Frequency of other exercises in last 4 weeks	161170	176029	NA	NA	3637
+3647	Duration of other exercises	161301	175898	NA	NA	3647
+6162_1	Types of transport used (excluding work): Car/motor vehicle	335650	1549	268888	66762	6162
+6162_2	Types of transport used (excluding work): Walk	335650	1549	165354	170296	6162
+6162_3	Types of transport used (excluding work): Public transport	335650	1549	99542	236108	6162
+6162_4	Types of transport used (excluding work): Cycle	335650	1549	23918	311732	6162
+6164_1	Types of physical activity in last 4 weeks: Walking for pleasure (not as a means of transport)	335599	1600	241930	93669	6164
+6164_100	Types of physical activity in last 4 weeks: None of the above	335599	1600	19551	316048	6164
+6164_2	Types of physical activity in last 4 weeks: Other exercises (eg: swimming, cycling, keep fit, bowling)	335599	1600	162803	172796	6164
+6164_3	Types of physical activity in last 4 weeks: Strenuous sports	335599	1600	34693	300906	6164
+6164_4	Types of physical activity in last 4 weeks: Light DIY (eg: pruning, watering the lawn)	335599	1600	175376	160223	6164
+6164_5	Types of physical activity in last 4 weeks: Heavy DIY (eg: weeding, lawn mowing, carpentry, digging)	335599	1600	147922	187677	6164
+864	Number of days/week walked 10+ minutes	331654	5545	NA	NA	864
+874	Duration of walks	288266	48933	NA	NA	874
+884	Number of days/week of moderate physical activity 10+ minutes	321309	15890	NA	NA	884
+894	Duration of moderate activity	251031	86168	NA	NA	894
+904	Number of days/week of vigorous physical activity 10+ minutes	321533	15666	NA	NA	904
+914	Duration of vigorous activity	183731	153468	NA	NA	914
+924	Usual walking pace	335349	1850	NA	NA	924
+943	Frequency of stair climbing in last 4 weeks	334169	3030	NA	NA	943
+971	Frequency of walking for pleasure in last 4 weeks	240924	96275	NA	NA	971
+981	Duration walking for pleasure	240788	96411	NA	NA	981
+991	Frequency of strenuous sports in last 4 weeks	34321	302878	NA	NA	991

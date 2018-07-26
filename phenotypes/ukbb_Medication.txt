@@ -1,0 +1,24 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+2492	Taking other prescription medications	336330	869	158113	178217	2492
+6153_1	Medication for cholesterol, blood pressure, diabetes, or take exogenous hormones: Cholesterol lowering medication	180203	156996	22705	157498	6153
+6153_100	Medication for cholesterol, blood pressure, diabetes, or take exogenous hormones: None of the above	180203	156996	124239	55964	6153
+6153_2	Medication for cholesterol, blood pressure, diabetes, or take exogenous hormones: Blood pressure medication	180203	156996	31488	148715	6153
+6153_4	Medication for cholesterol, blood pressure, diabetes, or take exogenous hormones: Hormone replacement therapy	180203	156996	13365	166838	6153
+6154_1	Medication for pain relief, constipation, heartburn: Aspirin	333581	3618	46946	286635	6154
+6154_100	Medication for pain relief, constipation, heartburn: None of the above	333581	3618	184936	148645	6154
+6154_2	Medication for pain relief, constipation, heartburn: Ibuprofen (e.g. Nurofen)	333581	3618	49411	284170	6154
+6154_3	Medication for pain relief, constipation, heartburn: Paracetamol	333581	3618	72882	260699	6154
+6154_5	Medication for pain relief, constipation, heartburn: Omeprazole (e.g. Zanprol)	333581	3618	20058	313523	6154
+6155_100	Vitamin and mineral supplements: None of the above	335591	1608	231424	104167	6155
+6155_2	Vitamin and mineral supplements: Vitamin B	335591	1608	13498	322093	6155
+6155_3	Vitamin and mineral supplements: Vitamin C	335591	1608	28536	307055	6155
+6155_4	Vitamin and mineral supplements: Vitamin D	335591	1608	12510	323081	6155
+6155_7	Vitamin and mineral supplements: Multivitamins +/- minerals	335591	1608	71695	263896	6155
+6177_1	Medication for cholesterol, blood pressure or diabetes: Cholesterol lowering medication	154702	182497	35840	118862	6177
+6177_100	Medication for cholesterol, blood pressure or diabetes: None of the above	154702	182497	103004	51698	6177
+6177_2	Medication for cholesterol, blood pressure or diabetes: Blood pressure medication	154702	182497	38548	116154	6177
+6179_1	Mineral and other dietary supplements: Fish oil (including cod liver oil)	336314	885	106738	229576	6179
+6179_100	Mineral and other dietary supplements: None of the above	336314	885	191371	144943	6179
+6179_2	Mineral and other dietary supplements: Glucosamine	336314	885	65971	270343	6179
+6179_3	Mineral and other dietary supplements: Calcium	336314	885	22047	314267	6179
+6179_4	Mineral and other dietary supplements: Zinc	336314	885	13151	323163	6179

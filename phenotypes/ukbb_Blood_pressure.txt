@@ -1,0 +1,4 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+102	Pulse rate, automated reading	317756	19443	NA	NA	102
+4079	Diastolic blood pressure, automated reading	317756	19443	NA	NA	4079
+4080	Systolic blood pressure, automated reading	317754	19445	NA	NA	4080

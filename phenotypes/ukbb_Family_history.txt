@@ -1,0 +1,40 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+1797	Father still alive	328694	8505	76074	252620	1797
+1807	Father's age at death	248726	88473	NA	NA	1807
+1835	Mother still alive	331902	5297	130993	200909	1835
+1873	Number of full brothers	332194	5005	NA	NA	1873
+1883	Number of full sisters	332255	4944	NA	NA	1883
+20107_1	Illnesses of father: Heart disease	298237	38962	97385	200852	20107
+20107_10	Illnesses of father: Alzheimer's disease/dementia	292807	44392	14024	278783	20107
+20107_100	Illnesses of father: None of the above (group 1)	294791	42408	109206	185585	20107
+20107_101	Illnesses of father: None of the above (group 2)	298287	38912	222710	75577	20107
+20107_12	Illnesses of father: Severe depression	292602	44597	11053	281549	20107
+20107_13	Illnesses of father: Prostate cancer	292710	44489	22534	270176	20107
+20107_2	Illnesses of father: Stroke	294757	42442	46007	248750	20107
+20107_3	Illnesses of father: Lung cancer	294142	43057	27424	266718	20107
+20107_4	Illnesses of father: Bowel cancer	292883	44316	17428	275455	20107
+20107_6	Illnesses of father: Chronic bronchitis/emphysema	294680	42519	33805	260875	20107
+20107_8	Illnesses of father: High blood pressure	294950	42249	66341	228609	20107
+20107_9	Illnesses of father: Diabetes	293407	43792	28197	265210	20107
+20110_1	Illnesses of mother: Heart disease	311606	25593	62065	249541	20110
+20110_10	Illnesses of mother: Alzheimer's disease/dementia	309843	27356	26757	283086	20110
+20110_100	Illnesses of mother: None of the above (group 1)	311264	25935	129391	181873	20110
+20110_101	Illnesses of mother: None of the above (group 2)	312950	24249	241462	71488	20110
+20110_12	Illnesses of mother: Severe depression	309474	27725	20369	289105	20110
+20110_2	Illnesses of mother: Stroke	310688	26511	44454	266234	20110
+20110_3	Illnesses of mother: Lung cancer	309511	27688	12712	296799	20110
+20110_4	Illnesses of mother: Bowel cancer	309418	27781	16072	293346	20110
+20110_5	Illnesses of mother: Breast cancer	309649	27550	25865	283784	20110
+20110_6	Illnesses of mother: Chronic bronchitis/emphysema	309793	27406	18252	291541	20110
+20110_8	Illnesses of mother: High blood pressure	311681	25518	94817	216864	20110
+20110_9	Illnesses of mother: Diabetes	309953	27246	28875	281078	20110
+20111_1	Illnesses of siblings: Heart disease	261582	75617	26382	235200	20111
+20111_100	Illnesses of siblings: None of the above (group 1)	262734	74465	178376	84358	20111
+20111_101	Illnesses of siblings: None of the above (group 2)	265504	71695	224596	40908	20111
+20111_12	Illnesses of siblings: Severe depression	260744	76455	18239	242505	20111
+20111_5	Illnesses of siblings: Breast cancer	260387	76812	11380	249007	20111
+20111_8	Illnesses of siblings: High blood pressure	262361	74838	54270	208091	20111
+20111_9	Illnesses of siblings: Diabetes	261075	76124	21747	239328	20111
+3526	Mother's age at death	199690	137509	NA	NA	3526
+4501	Non-accidental death in close genetic family	105569	231630	28680	76889	4501
+5057	Number of older siblings	95618	241581	NA	NA	5057

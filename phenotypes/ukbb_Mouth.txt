@@ -1,0 +1,7 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+6149_1	Mouth/teeth dental problems: Mouth ulcers	336138	1061	34398	301740	6149
+6149_100	Mouth/teeth dental problems: None of the above	336138	1061	204310	131828	6149
+6149_3	Mouth/teeth dental problems: Bleeding gums	336138	1061	43469	292669	6149
+6149_4	Mouth/teeth dental problems: Loose teeth	336138	1061	13238	322900	6149
+6149_5	Mouth/teeth dental problems: Toothache	336138	1061	13290	322848	6149
+6149_6	Mouth/teeth dental problems: Dentures	336138	1061	56894	279244	6149

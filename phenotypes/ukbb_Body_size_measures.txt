@@ -1,0 +1,7 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+20015	Sitting height	336172	1027	NA	NA	20015
+21001	Body mass index (BMI)	336107	1092	NA	NA	21001
+21002	Weight	336227	972	NA	NA	21002
+48	Waist circumference	336639	560	NA	NA	48
+49	Hip circumference	336601	598	NA	NA	49
+50	Standing height	336474	725	NA	NA	50

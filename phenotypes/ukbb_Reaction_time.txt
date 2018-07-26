@@ -1,0 +1,2 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+20023	Mean time to correctly identify matches	335139	2060	NA	NA	20023

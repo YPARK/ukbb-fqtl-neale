@@ -1,0 +1,4 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+20118_11	Home area population density - urban or rural: Scotland - Large Urban Area	333997	3202	18867	315130	20118
+20118_6	Home area population density - urban or rural: England/Wales - Town and Fringe - less sparse	333997	3202	24243	309754	20118
+20118_7	Home area population density - urban or rural: England/Wales - Village - less sparse	333997	3202	17271	316726	20118

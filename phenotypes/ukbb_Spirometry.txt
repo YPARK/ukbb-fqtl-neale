@@ -1,0 +1,9 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+20150	Forced expiratory volume in 1-second (FEV1), Best measure	255492	81707	NA	NA	20150
+20151	Forced vital capacity (FVC), Best measure	255492	81707	NA	NA	20151
+20152	Reproduciblity of spirometry measurement using ERS/ATS criteria	255492	81707	199585	55907	20152
+20153	Forced expiratory volume in 1-second (FEV1), predicted	110423	226776	NA	NA	20153
+20154	Forced expiratory volume in 1-second (FEV1), predicted percentage	110423	226776	NA	NA	20154
+3062	Forced vital capacity (FVC)	307638	29561	NA	NA	3062
+3063	Forced expiratory volume in 1-second (FEV1)	307638	29561	NA	NA	3063
+3064	Peak expiratory flow (PEF)	307638	29561	NA	NA	3064

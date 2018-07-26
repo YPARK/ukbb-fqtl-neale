@@ -1,0 +1,31 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+23099	Body fat percentage	331117	6082	NA	NA	23099
+23100	Whole body fat mass	330762	6437	NA	NA	23100
+23101	Whole body fat-free mass	331291	5908	NA	NA	23101
+23102	Whole body water mass	331315	5884	NA	NA	23102
+23105	Basal metabolic rate	331307	5892	NA	NA	23105
+23106	Impedance of whole body	331284	5915	NA	NA	23106
+23107	Impedance of leg (right)	331301	5898	NA	NA	23107
+23108	Impedance of leg (left)	331296	5903	NA	NA	23108
+23109	Impedance of arm (right)	331279	5920	NA	NA	23109
+23110	Impedance of arm (left)	331292	5907	NA	NA	23110
+23111	Leg fat percentage (right)	331296	5903	NA	NA	23111
+23112	Leg fat mass (right)	331293	5906	NA	NA	23112
+23113	Leg fat-free mass (right)	331285	5914	NA	NA	23113
+23114	Leg predicted mass (right)	331285	5914	NA	NA	23114
+23115	Leg fat percentage (left)	331278	5921	NA	NA	23115
+23116	Leg fat mass (left)	331275	5924	NA	NA	23116
+23117	Leg fat-free mass (left)	331258	5941	NA	NA	23117
+23118	Leg predicted mass (left)	331253	5946	NA	NA	23118
+23119	Arm fat percentage (right)	331249	5950	NA	NA	23119
+23120	Arm fat mass (right)	331226	5973	NA	NA	23120
+23121	Arm fat-free mass (right)	331221	5978	NA	NA	23121
+23122	Arm predicted mass (right)	331216	5983	NA	NA	23122
+23123	Arm fat percentage (left)	331198	6001	NA	NA	23123
+23124	Arm fat mass (left)	331164	6035	NA	NA	23124
+23125	Arm fat-free mass (left)	331159	6040	NA	NA	23125
+23126	Arm predicted mass (left)	331146	6053	NA	NA	23126
+23127	Trunk fat percentage	331113	6086	NA	NA	23127
+23128	Trunk fat mass	331093	6106	NA	NA	23128
+23129	Trunk fat-free mass	331030	6169	NA	NA	23129
+23130	Trunk predicted mass	330995	6204	NA	NA	23130

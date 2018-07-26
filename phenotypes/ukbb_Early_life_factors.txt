@@ -1,0 +1,7 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+1677	Breastfed as a baby	255881	81318	181621	74260	1677
+1687	Comparative body size at age 10	331693	5506	NA	NA	1687
+1697	Comparative height size at age 10	332021	5178	NA	NA	1697
+1707_2	Handedness (chirality/laterality): Left-handed	337130	69	32442	304688	1707
+1787	Maternal smoking around birth	289727	47472	88601	201126	1787
+20022	Birth weight	193063	144136	NA	NA	20022

@@ -1,0 +1,17 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+6142_1	Current employment status: In paid employment or self-employed	336252	947	190779	145473	6142
+6142_2	Current employment status: Retired	336252	947	125766	210486	6142
+6142_3	Current employment status: Looking after home and/or family	336252	947	16722	319530	6142
+6142_4	Current employment status: Unable to work because of sickness or disability	336252	947	12554	323698	6142
+6142_6	Current employment status: Doing unpaid or voluntary work	336252	947	12407	323845	6142
+6143_1	Transport type for commuting to job workplace: Car/motor vehicle	177550	159649	142996	34554	6143
+6143_2	Transport type for commuting to job workplace: Walk	177550	159649	27862	149688	6143
+6143_3	Transport type for commuting to job workplace: Public transport	177550	159649	35908	141642	6143
+6143_4	Transport type for commuting to job workplace: Cycle	177550	159649	13527	164023	6143
+757	Time employed in main current job	180531	156668	NA	NA	757
+767	Length of working week for main job	188166	149033	NA	NA	767
+777	Frequency of travelling from home to job workplace	190557	146642	NA	NA	777
+796	Distance between home and job workplace	161121	176078	NA	NA	796
+806	Job involves mainly walking or standing	190606	146593	NA	NA	806
+816	Job involves heavy manual or physical work	190643	146556	NA	NA	816
+826	Job involves shift work	190442	146757	NA	NA	826

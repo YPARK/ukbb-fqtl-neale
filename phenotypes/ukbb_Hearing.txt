@@ -1,0 +1,8 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+2247_1	Hearing difficulty/problems: Yes	323978	13221	84839	239139	2247
+2257	Hearing difficulty/problems with background noise	330759	6440	125089	205670	2257
+3393	Hearing aid user	204240	132959	10322	193918	3393
+4803_14	Tinnitus: Yes, but not now, but have in the past	109411	227788	12076	97335	4803
+4814	Tinnitus severity/nuisance	31627	305572	NA	NA	4814
+4825	Noisy workplace	110439	226760	NA	NA	4825
+4836	Loud music exposure frequency	109889	227310	NA	NA	4836

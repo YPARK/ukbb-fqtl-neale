@@ -1,0 +1,4 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+2345	Ever had bowel cancer screening	332011	5188	107072	224939	2345
+2355	Most recent bowel cancer screening	75920	261279	NA	NA	2355
+2365	Ever had prostate specific antigen (PSA) test	147970	189229	46523	101447	2365

@@ -1,0 +1,39 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+1920	Mood swings	329428	7771	148601	180827	1920
+1930	Miserableness	331856	5343	141755	190101	1930
+1940	Irritability	322668	14531	90282	232386	1940
+1950	Sensitivity / hurt feelings	327832	9367	182340	145492	1950
+1960	Fed-up feelings	330549	6650	134124	196425	1960
+1970	Nervous feelings	328725	8474	77767	250958	1970
+1980	Worrier / anxious feelings	328717	8482	186559	142158	1980
+1990	Tense / 'highly strung'	327232	9967	56012	271220	1990
+2000	Worry too long after embarrassment	323766	13433	154615	169151	2000
+2010	Suffer from 'nerves'	325248	11951	69352	255896	2010
+20127	Neuroticism score	274108	63091	NA	NA	20127
+2020	Loneliness, isolation	332263	4936	58752	273511	2020
+2030	Guilty feelings	328769	8430	92945	235824	2030
+2040	Risk taking	325821	11378	82808	243013	2040
+2050	Frequency of depressed mood in last 2 weeks	323267	13932	NA	NA	2050
+2060	Frequency of unenthusiasm / disinterest in last 2 weeks	326730	10469	NA	NA	2060
+2070	Frequency of tenseness / restlessness in last 2 weeks	325169	12030	NA	NA	2070
+2080	Frequency of tiredness / lethargy in last 2 weeks	327528	9671	NA	NA	2080
+2090	Seen doctor (GP) for nerves, anxiety, tension or depression	335108	2091	115328	219780	2090
+2100	Seen a psychiatrist for nerves, anxiety, tension or depression	335888	1311	38008	297880	2100
+4526	Happiness	110935	226264	NA	NA	4526
+4537	Work/job satisfaction	75840	261359	NA	NA	4537
+4548	Health satisfaction	110964	226235	NA	NA	4548
+4559	Family relationship satisfaction	110290	226909	NA	NA	4559
+4570	Friendships satisfaction	110118	227081	NA	NA	4570
+4581	Financial situation satisfaction	110814	226385	NA	NA	4581
+4598	Ever depressed for a whole week	109229	227970	58468	50761	4598
+4609	Longest period of depression	46884	290315	NA	NA	4609
+4620	Number of depression episodes	42378	294821	NA	NA	4620
+4631	Ever unenthusiastic/disinterested for a whole week	106868	230331	39154	67714	4631
+4653	Ever highly irritable/argumentative for 2 days	108925	228274	19265	89660	4653
+5375	Longest period of unenthusiasm / disinterest	29704	307495	NA	NA	5375
+5386	Number of unenthusiastic/disinterested episodes	27707	309492	NA	NA	5386
+6145_1	Illness, injury, bereavement, stress in last 2 years: Serious illness, injury or assault to yourself	335219	1980	30762	304457	6145
+6145_100	Illness, injury, bereavement, stress in last 2 years: None of the above	335219	1980	189518	145701	6145
+6145_2	Illness, injury, bereavement, stress in last 2 years: Serious illness, injury or assault of a close relative	335219	1980	38516	296703	6145
+6145_3	Illness, injury, bereavement, stress in last 2 years: Death of a close relative	335219	1980	69921	265298	6145
+6145_6	Illness, injury, bereavement, stress in last 2 years: Financial difficulties	335219	1980	37284	297935	6145

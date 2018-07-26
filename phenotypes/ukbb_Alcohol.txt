@@ -1,0 +1,20 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+1558	Alcohol intake frequency.	336965	234	NA	NA	1558
+1568	Average weekly red wine intake	241008	96191	NA	NA	1568
+1578	Average weekly champagne plus white wine intake	240864	96335	NA	NA	1578
+1588	Average weekly beer plus cider intake	241447	95752	NA	NA	1588
+1598	Average weekly spirits intake	240658	96541	NA	NA	1598
+1608	Average weekly fortified wine intake	241381	95818	NA	NA	1608
+1618	Alcohol usually taken with meals	172454	164745	116941	55513	1618
+1628	Alcohol intake versus 10 years previously	313248	23951	NA	NA	1628
+20117_0	Alcohol drinker status: Never	336965	234	10432	326533	20117
+20117_1	Alcohol drinker status: Previous	336965	234	11518	325447	20117
+2664_3	Reason for reducing amount of alcohol drunk: Health precaution	124798	212401	40728	84070	2664
+3731	Former alcohol drinker	21894	315305	11518	10376	3731
+4407	Average monthly red wine intake	24396	312803	NA	NA	4407
+4418	Average monthly champagne plus white wine intake	24367	312832	NA	NA	4418
+4429	Average monthly beer plus cider intake	24452	312747	NA	NA	4429
+4440	Average monthly spirits intake	24364	312835	NA	NA	4440
+4451	Average monthly fortified wine intake	24471	312728	NA	NA	4451
+4462	Average monthly intake of other alcoholic drinks	24505	312694	NA	NA	4462
+5364	Average weekly intake of other alcoholic drinks	79291	257908	NA	NA	5364

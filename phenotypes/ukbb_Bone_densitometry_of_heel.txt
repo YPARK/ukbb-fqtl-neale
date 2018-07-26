@@ -1,0 +1,4 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+4106	Heel bone mineral density (BMD) T-score, automated (left)	106254	230945	NA	NA	4106
+4125	Heel bone mineral density (BMD) T-score, automated (right)	106251	230948	NA	NA	4125
+78	Heel bone mineral density (BMD) T-score, automated	194398	142801	NA	NA	78

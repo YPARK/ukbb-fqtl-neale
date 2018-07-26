@@ -1,0 +1,7 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+2375	Relative age of first facial hair	151113	186086	NA	NA	2375
+2385	Relative age voice broke	144645	192554	NA	NA	2385
+2395_2	Hair/balding pattern: Pattern 2	154988	182211	35563	119425	2395
+2395_3	Hair/balding pattern: Pattern 3	154988	182211	41584	113404	2395
+2395_4	Hair/balding pattern: Pattern 4	154988	182211	28389	126599	2395
+2405	Number of children fathered	154888	182311	NA	NA	2405

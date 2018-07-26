@@ -1,0 +1,2 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+20016	Fluid intelligence score	108818	228381	NA	NA	20016

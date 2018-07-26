@@ -1,0 +1,8 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+2207	Wears glasses or contact lenses	336919	280	301012	35907	2207
+2227	Other eye problems	336428	771	47823	288605	2227
+6147_1	Reason for glasses/contact lenses: For short-sightedness, i.e. only or mainly for distance viewing such as driving, cinema etc (called 'myopia')	335700	1499	26943	308757	6147
+6147_2	Reason for glasses/contact lenses: For long-sightedness, i.e. for distance and near, but particularly for near tasks like reading (called 'hypermetropia')	335700	1499	13923	321777	6147
+6147_3	Reason for glasses/contact lenses: For just reading/near work as you are getting older (called 'presbyopia')	335700	1499	29144	306556	6147
+6148_100	Eye problems/disorders: None of the above	108817	228382	84686	24131	6148
+6148_4	Eye problems/disorders: Cataract	108817	228382	10475	98342	6148

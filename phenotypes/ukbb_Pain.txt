@@ -1,0 +1,13 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+3404	Neck/shoulder pain for 3+ months	75651	261548	52253	23398	3404
+3571	Back pain for 3+ months	84489	252710	57893	26596	3571
+3741	Stomach/abdominal pain for 3+ months	27584	309615	15337	12247	3741
+3773	Knee pain for 3+ months	70992	266207	55910	15082	3773
+3799	Headaches for 3+ months	65583	271616	29979	35604	3799
+6159_1	Pain type(s) experienced in last month: Headache	336650	549	66967	269683	6159
+6159_100	Pain type(s) experienced in last month: None of the above	336650	549	136199	200451	6159
+6159_3	Pain type(s) experienced in last month: Neck or shoulder pain	336650	549	76404	260246	6159
+6159_4	Pain type(s) experienced in last month: Back pain	336650	549	85221	251429	6159
+6159_5	Pain type(s) experienced in last month: Stomach or abdominal pain	336650	549	28098	308552	6159
+6159_6	Pain type(s) experienced in last month: Hip pain	336650	549	37714	298936	6159
+6159_7	Pain type(s) experienced in last month: Knee pain	336650	549	71561	265089	6159

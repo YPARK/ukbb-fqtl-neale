@@ -1,0 +1,4 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+30510	Creatinine (enzymatic) in urine	327525	9674	NA	NA	30510
+30520	Potassium in urine	326816	10383	NA	NA	30520
+30530	Sodium in urine	326831	10368	NA	NA	30530

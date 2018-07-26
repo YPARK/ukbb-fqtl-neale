@@ -1,0 +1,22 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+1239	Current tobacco smoking	337030	169	NA	NA	1239
+1249	Past tobacco smoking	310749	26450	NA	NA	1249
+1259	Smoking/smokers in household	311142	26057	NA	NA	1259
+1269	Exposure to tobacco smoke at home	305723	31476	NA	NA	1269
+1279	Exposure to tobacco smoke outside home	286550	50649	NA	NA	1279
+20116_1	Smoking status: Previous	336024	1175	118419	217605	20116
+20116_2	Smoking status: Current	336024	1175	33928	302096	20116
+20160	Ever smoked	336067	1132	202585	133482	20160
+2644	Light smokers, at least 100 smokes in lifetime	90517	246682	41027	49490	2644
+2887	Number of cigarettes previously smoked daily	78291	258908	NA	NA	2887
+2907	Ever stopped smoking for 6+ months	81538	255661	35064	46474	2907
+2926	Number of unsuccessful stop-smoking attempts	75135	262064	NA	NA	2926
+2936	Likelihood of resuming smoking	80926	256273	NA	NA	2936
+3456	Number of cigarettes currently smoked daily (current cigarette smokers)	23205	313994	NA	NA	3456
+3466	Time from waking to first cigarette	23265	313934	NA	NA	3466
+3476	Difficulty not smoking for 1 day	23332	313867	NA	NA	3476
+3486	Ever tried to stop smoking	25181	312018	NA	NA	3486
+3496	Wants to stop smoking	24913	312286	NA	NA	3496
+6157_100	Why stopped smoking: None of the above	82082	255117	16472	65610	6157
+6157_3	Why stopped smoking: Health precaution	82082	255117	51560	30522	6157
+6157_4	Why stopped smoking: Financial reasons	82082	255117	20359	61723	6157

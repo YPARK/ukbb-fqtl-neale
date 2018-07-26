@@ -1,0 +1,27 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code
+134	Number of self-reported cancers	337154	45	NA	NA	134
+135	Number of self-reported non-cancer illnesses	337159	40	NA	NA	135
+20002_1065	Non-cancer illness code, self-reported: hypertension	337159	40	87690	249469	20002
+20002_1074	Non-cancer illness code, self-reported: angina	337159	40	10612	326547	20002
+20002_1111	Non-cancer illness code, self-reported: asthma	337159	40	39049	298110	20002
+20002_1138	Non-cancer illness code, self-reported: gastro-oesophageal reflux (gord) / gastric reflux	337159	40	14316	322843	20002
+20002_1220	Non-cancer illness code, self-reported: diabetes	337159	40	13243	323916	20002
+20002_1226	Non-cancer illness code, self-reported: hypothyroidism/myxoedema	337159	40	16376	320783	20002
+20002_1265	Non-cancer illness code, self-reported: migraine	337159	40	10007	327152	20002
+20002_1286	Non-cancer illness code, self-reported: depression	337159	40	19195	317964	20002
+20002_1387	Non-cancer illness code, self-reported: hayfever/allergic rhinitis	337159	40	19320	317839	20002
+20002_1465	Non-cancer illness code, self-reported: osteoarthritis	337159	40	28257	308902	20002
+20002_1473	Non-cancer illness code, self-reported: high cholesterol	337159	40	41296	295863	20002
+20002_99999	Non-cancer illness code, self-reported: unclassifiable	337159	40	13589	323570	20002
+2443	Diabetes diagnosed by doctor	336473	726	16183	320290	2443
+2453	Cancer diagnosed by doctor	336272	927	26576	309696	2453
+2463	Fractured/broken bones in last 5 years	335587	1612	32193	303394	2463
+2473	Other serious medical condition/disability diagnosed by doctor	331274	5925	67968	263306	2473
+3005	Fracture resulting from simple fall	31762	305437	18864	12898	3005
+6150_100	Vascular/heart problems diagnosed by doctor: None of the above	336683	516	236530	100153	6150
+6150_2	Vascular/heart problems diagnosed by doctor: Angina	336683	516	10618	326065	6150
+6150_4	Vascular/heart problems diagnosed by doctor: High blood pressure	336683	516	91033	245650	6150
+6151_7	Fractured bone site(s): Other bones	335546	1653	17380	318166	6151
+6152_100	Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor: None of the above	336782	417	228530	108252	6152
+6152_8	Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor: Asthma	336782	417	38791	297991	6152
+6152_9	Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor: Hayfever, allergic rhinitis or eczema	336782	417	77891	258891	6152
