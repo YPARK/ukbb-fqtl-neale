@@ -71,4 +71,4 @@ for(.cat in unique(pheno.cat.tab$category.name)) {
     write_tsv(.out, path = .cat.file)
 }
 
-
+write_tsv(pheno.cat.tab, 'phenotypes/ukbb_all_categories.txt')

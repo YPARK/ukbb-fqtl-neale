@@ -1,0 +1,410 @@
+Field.code	Field	N.non.missing	N.missing	N.cases	N.controls	code	category	category.name
+1001	Duration of strenuous sports	34342	302857	NA	NA	1001	100054	Physical activity
+1011	Frequency of light DIY in last 4 weeks	169623	167576	NA	NA	1011	100054	Physical activity
+102	Pulse rate, automated reading	317756	19443	NA	NA	102	100011	Blood pressure
+1021	Duration of light DIY	168725	168474	NA	NA	1021	100054	Physical activity
+1070	Time spent watching television (TV)	319740	17459	NA	NA	1070	100054	Physical activity
+1080	Time spent using computer	261987	75212	NA	NA	1080	100054	Physical activity
+1090	Time spent driving	224813	112386	NA	NA	1090	100054	Physical activity
+1100	Drive faster than motorway speed limit	306030	31169	NA	NA	1100	100054	Physical activity
+1160	Sleep duration	335410	1789	NA	NA	1160	100057	Sleep
+1170	Getting up in morning	336501	698	NA	NA	1170	100057	Sleep
+1180	Morning/evening person (chronotype)	301143	36056	NA	NA	1180	100057	Sleep
+1190	Nap during day	337074	125	NA	NA	1190	100057	Sleep
+1200	Sleeplessness / insomnia	336965	234	NA	NA	1200	100057	Sleep
+1210	Snoring	314449	22750	117812	196637	1210	100057	Sleep
+1220	Daytime dozing / sleeping (narcolepsy)	336082	1117	NA	NA	1220	100057	Sleep
+1239	Current tobacco smoking	337030	169	NA	NA	1239	100058	Smoking
+1249	Past tobacco smoking	310749	26450	NA	NA	1249	100058	Smoking
+1259	Smoking/smokers in household	311142	26057	NA	NA	1259	100058	Smoking
+1269	Exposure to tobacco smoke at home	305723	31476	NA	NA	1269	100058	Smoking
+1279	Exposure to tobacco smoke outside home	286550	50649	NA	NA	1279	100058	Smoking
+134	Number of self-reported cancers	337154	45	NA	NA	134	100074	Medical conditions
+135	Number of self-reported non-cancer illnesses	337159	40	NA	NA	135	100074	Medical conditions
+136	Number of operations, self-reported	337159	40	NA	NA	136	100076	Operations
+137	Number of treatments/medications taken	337159	40	NA	NA	137	100075	Medications
+1558	Alcohol intake frequency.	336965	234	NA	NA	1558	100051	Alcohol
+1568	Average weekly red wine intake	241008	96191	NA	NA	1568	100051	Alcohol
+1578	Average weekly champagne plus white wine intake	240864	96335	NA	NA	1578	100051	Alcohol
+1588	Average weekly beer plus cider intake	241447	95752	NA	NA	1588	100051	Alcohol
+1598	Average weekly spirits intake	240658	96541	NA	NA	1598	100051	Alcohol
+1608	Average weekly fortified wine intake	241381	95818	NA	NA	1608	100051	Alcohol
+1618	Alcohol usually taken with meals	172454	164745	116941	55513	1618	100051	Alcohol
+1628	Alcohol intake versus 10 years previously	313248	23951	NA	NA	1628	100051	Alcohol
+1677	Breastfed as a baby	255881	81318	181621	74260	1677	100033	Early life factors
+1687	Comparative body size at age 10	331693	5506	NA	NA	1687	100033	Early life factors
+1697	Comparative height size at age 10	332021	5178	NA	NA	1697	100033	Early life factors
+1707_2	Handedness (chirality/laterality): Left-handed	337130	69	32442	304688	1707	100033	Early life factors
+1787	Maternal smoking around birth	289727	47472	88601	201126	1787	100033	Early life factors
+1797	Father still alive	328694	8505	76074	252620	1797	100034	Family history
+1807	Father's age at death	248726	88473	NA	NA	1807	100034	Family history
+1835	Mother still alive	331902	5297	130993	200909	1835	100034	Family history
+1873	Number of full brothers	332194	5005	NA	NA	1873	100034	Family history
+1883	Number of full sisters	332255	4944	NA	NA	1883	100034	Family history
+189	Townsend deprivation index at recruitment	336798	401	NA	NA	189	100094	Baseline characteristics
+1920	Mood swings	329428	7771	148601	180827	1920	100060	Mental health
+1930	Miserableness	331856	5343	141755	190101	1930	100060	Mental health
+1940	Irritability	322668	14531	90282	232386	1940	100060	Mental health
+1950	Sensitivity / hurt feelings	327832	9367	182340	145492	1950	100060	Mental health
+1960	Fed-up feelings	330549	6650	134124	196425	1960	100060	Mental health
+1970	Nervous feelings	328725	8474	77767	250958	1970	100060	Mental health
+1980	Worrier / anxious feelings	328717	8482	186559	142158	1980	100060	Mental health
+1990	Tense / 'highly strung'	327232	9967	56012	271220	1990	100060	Mental health
+2000	Worry too long after embarrassment	323766	13433	154615	169151	2000	100060	Mental health
+20002_1065	Non-cancer illness code, self-reported: hypertension	337159	40	87690	249469	20002	100074	Medical conditions
+20002_1074	Non-cancer illness code, self-reported: angina	337159	40	10612	326547	20002	100074	Medical conditions
+20002_1111	Non-cancer illness code, self-reported: asthma	337159	40	39049	298110	20002	100074	Medical conditions
+20002_1138	Non-cancer illness code, self-reported: gastro-oesophageal reflux (gord) / gastric reflux	337159	40	14316	322843	20002	100074	Medical conditions
+20002_1220	Non-cancer illness code, self-reported: diabetes	337159	40	13243	323916	20002	100074	Medical conditions
+20002_1226	Non-cancer illness code, self-reported: hypothyroidism/myxoedema	337159	40	16376	320783	20002	100074	Medical conditions
+20002_1265	Non-cancer illness code, self-reported: migraine	337159	40	10007	327152	20002	100074	Medical conditions
+20002_1286	Non-cancer illness code, self-reported: depression	337159	40	19195	317964	20002	100074	Medical conditions
+20002_1387	Non-cancer illness code, self-reported: hayfever/allergic rhinitis	337159	40	19320	317839	20002	100074	Medical conditions
+20002_1465	Non-cancer illness code, self-reported: osteoarthritis	337159	40	28257	308902	20002	100074	Medical conditions
+20002_1473	Non-cancer illness code, self-reported: high cholesterol	337159	40	41296	295863	20002	100074	Medical conditions
+20002_99999	Non-cancer illness code, self-reported: unclassifiable	337159	40	13589	323570	20002	100074	Medical conditions
+20003_1140852976	Treatment/medication code: multivitamins	337159	40	10402	326757	20003	100075	Medications
+20003_1140860806	Treatment/medication code: ramipril	337159	40	15787	321372	20003	100075	Medications
+20003_1140861958	Treatment/medication code: simvastatin	337159	40	38492	298667	20003	100075	Medications
+20003_1140864752	Treatment/medication code: lansoprazole	337159	40	12071	325088	20003	100075	Medications
+20003_1140865634	Treatment/medication code: omeprazole	337159	40	19668	317491	20003	100075	Medications
+20003_1140866738	Treatment/medication code: atenolol	337159	40	13184	323975	20003	100075	Medications
+20003_1140868226	Treatment/medication code: aspirin	337159	40	45012	292147	20003	100075	Medications
+20003_1140871310	Treatment/medication code: ibuprofen	337159	40	41952	295207	20003	100075	Medications
+20003_1140879802	Treatment/medication code: amlodipine	337159	40	13693	323466	20003	100075	Medications
+20003_1140909674	Treatment/medication code: cod liver oil capsule	337159	40	19806	317353	20003	100075	Medications
+20003_1141146234	Treatment/medication code: atorvastatin	337159	40	10167	326992	20003	100075	Medications
+20003_1141188442	Treatment/medication code: glucosamine product	337159	40	22914	314245	20003	100075	Medications
+20003_1141191044	Treatment/medication code: levothyroxine sodium	337159	40	13717	323442	20003	100075	Medications
+20003_1141194794	Treatment/medication code: bendroflumethiazide	337159	40	19084	318075	20003	100075	Medications
+20003_1193	Treatment/medication code: omega-3/fish oil supplement	337159	40	12924	324235	20003	100075	Medications
+20003_2038460150	Treatment/medication code: paracetamol	337159	40	62050	275109	20003	100075	Medications
+20003_99999	Treatment/medication code: Free-text entry, unable to be coded	337159	40	11362	325797	20003	100075	Medications
+20015	Sitting height	336172	1027	NA	NA	20015	100010	Body size measures
+20016	Fluid intelligence score	108818	228381	NA	NA	20016	100027	Fluid intelligence
+20018	Prospective memory result	111099	226100	NA	NA	20018	100031	Prospective memory
+20022	Birth weight	193063	144136	NA	NA	20022	100072	Early life factors
+20023	Mean time to correctly identify matches	335139	2060	NA	NA	20023	100032	Reaction time
+2010	Suffer from 'nerves'	325248	11951	69352	255896	2010	100060	Mental health
+20107_1	Illnesses of father: Heart disease	298237	38962	97385	200852	20107	100034	Family history
+20107_10	Illnesses of father: Alzheimer's disease/dementia	292807	44392	14024	278783	20107	100034	Family history
+20107_100	Illnesses of father: None of the above (group 1)	294791	42408	109206	185585	20107	100034	Family history
+20107_101	Illnesses of father: None of the above (group 2)	298287	38912	222710	75577	20107	100034	Family history
+20107_12	Illnesses of father: Severe depression	292602	44597	11053	281549	20107	100034	Family history
+20107_13	Illnesses of father: Prostate cancer	292710	44489	22534	270176	20107	100034	Family history
+20107_2	Illnesses of father: Stroke	294757	42442	46007	248750	20107	100034	Family history
+20107_3	Illnesses of father: Lung cancer	294142	43057	27424	266718	20107	100034	Family history
+20107_4	Illnesses of father: Bowel cancer	292883	44316	17428	275455	20107	100034	Family history
+20107_6	Illnesses of father: Chronic bronchitis/emphysema	294680	42519	33805	260875	20107	100034	Family history
+20107_8	Illnesses of father: High blood pressure	294950	42249	66341	228609	20107	100034	Family history
+20107_9	Illnesses of father: Diabetes	293407	43792	28197	265210	20107	100034	Family history
+20110_1	Illnesses of mother: Heart disease	311606	25593	62065	249541	20110	100034	Family history
+20110_10	Illnesses of mother: Alzheimer's disease/dementia	309843	27356	26757	283086	20110	100034	Family history
+20110_100	Illnesses of mother: None of the above (group 1)	311264	25935	129391	181873	20110	100034	Family history
+20110_101	Illnesses of mother: None of the above (group 2)	312950	24249	241462	71488	20110	100034	Family history
+20110_12	Illnesses of mother: Severe depression	309474	27725	20369	289105	20110	100034	Family history
+20110_2	Illnesses of mother: Stroke	310688	26511	44454	266234	20110	100034	Family history
+20110_3	Illnesses of mother: Lung cancer	309511	27688	12712	296799	20110	100034	Family history
+20110_4	Illnesses of mother: Bowel cancer	309418	27781	16072	293346	20110	100034	Family history
+20110_5	Illnesses of mother: Breast cancer	309649	27550	25865	283784	20110	100034	Family history
+20110_6	Illnesses of mother: Chronic bronchitis/emphysema	309793	27406	18252	291541	20110	100034	Family history
+20110_8	Illnesses of mother: High blood pressure	311681	25518	94817	216864	20110	100034	Family history
+20110_9	Illnesses of mother: Diabetes	309953	27246	28875	281078	20110	100034	Family history
+20111_1	Illnesses of siblings: Heart disease	261582	75617	26382	235200	20111	100034	Family history
+20111_100	Illnesses of siblings: None of the above (group 1)	262734	74465	178376	84358	20111	100034	Family history
+20111_101	Illnesses of siblings: None of the above (group 2)	265504	71695	224596	40908	20111	100034	Family history
+20111_12	Illnesses of siblings: Severe depression	260744	76455	18239	242505	20111	100034	Family history
+20111_5	Illnesses of siblings: Breast cancer	260387	76812	11380	249007	20111	100034	Family history
+20111_8	Illnesses of siblings: High blood pressure	262361	74838	54270	208091	20111	100034	Family history
+20111_9	Illnesses of siblings: Diabetes	261075	76124	21747	239328	20111	100034	Family history
+20116_1	Smoking status: Previous	336024	1175	118419	217605	20116	100058	Smoking
+20116_2	Smoking status: Current	336024	1175	33928	302096	20116	100058	Smoking
+20117_0	Alcohol drinker status: Never	336965	234	10432	326533	20117	100051	Alcohol
+20117_1	Alcohol drinker status: Previous	336965	234	11518	325447	20117	100051	Alcohol
+20118_11	Home area population density - urban or rural: Scotland - Large Urban Area	333997	3202	18867	315130	20118	100024	Reception
+20118_6	Home area population density - urban or rural: England/Wales - Town and Fringe - less sparse	333997	3202	24243	309754	20118	100024	Reception
+20118_7	Home area population density - urban or rural: England/Wales - Village - less sparse	333997	3202	17271	316726	20118	100024	Reception
+20127	Neuroticism score	274108	63091	NA	NA	20127	100060	Mental health
+20150	Forced expiratory volume in 1-second (FEV1), Best measure	255492	81707	NA	NA	20150	100020	Spirometry
+20151	Forced vital capacity (FVC), Best measure	255492	81707	NA	NA	20151	100020	Spirometry
+20152	Reproduciblity of spirometry measurement using ERS/ATS criteria	255492	81707	199585	55907	20152	100020	Spirometry
+20153	Forced expiratory volume in 1-second (FEV1), predicted	110423	226776	NA	NA	20153	100020	Spirometry
+20154	Forced expiratory volume in 1-second (FEV1), predicted percentage	110423	226776	NA	NA	20154	100020	Spirometry
+20160	Ever smoked	336067	1132	202585	133482	20160	100058	Smoking
+2020	Loneliness, isolation	332263	4936	58752	273511	2020	100060	Mental health
+2030	Guilty feelings	328769	8430	92945	235824	2030	100060	Mental health
+2040	Risk taking	325821	11378	82808	243013	2040	100060	Mental health
+2050	Frequency of depressed mood in last 2 weeks	323267	13932	NA	NA	2050	100060	Mental health
+2060	Frequency of unenthusiasm / disinterest in last 2 weeks	326730	10469	NA	NA	2060	100060	Mental health
+2070	Frequency of tenseness / restlessness in last 2 weeks	325169	12030	NA	NA	2070	100060	Mental health
+2080	Frequency of tiredness / lethargy in last 2 weeks	327528	9671	NA	NA	2080	100060	Mental health
+2090	Seen doctor (GP) for nerves, anxiety, tension or depression	335108	2091	115328	219780	2090	100060	Mental health
+2100	Seen a psychiatrist for nerves, anxiety, tension or depression	335888	1311	38008	297880	2100	100060	Mental health
+21001	Body mass index (BMI)	336107	1092	NA	NA	21001	100010	Body size measures
+21002	Weight	336227	972	NA	NA	21002	100010	Body size measures
+21021	Pulse wave Arterial Stiffness index	109813	227386	NA	NA	21021	100007	Arterial stiffness
+2178	Overall health rating	336020	1179	NA	NA	2178	100042	General health
+2188	Long-standing illness, disability or infirmity	329663	7536	107123	222540	2188	100042	General health
+2207	Wears glasses or contact lenses	336919	280	301012	35907	2207	100041	Eyesight
+22126	Doctor diagnosed hayfever or allergic rhinitis	83529	253670	18934	64595	22126	132	Medical information
+22127	Doctor diagnosed asthma	83529	253670	10589	72940	22127	132	Medical information
+2227	Other eye problems	336428	771	47823	288605	2227	100041	Eyesight
+2247_1	Hearing difficulty/problems: Yes	323978	13221	84839	239139	2247	100043	Hearing
+22502	Cough on most days	83529	253670	11424	72105	22502	132	Medical information
+22503	Years of cough on most days	11424	325775	NA	NA	22503	132	Medical information
+22506_113	Tobacco smoking: Ex-smoker	83133	254066	30184	52949	22506	132	Medical information
+2257	Hearing difficulty/problems with background noise	330759	6440	125089	205670	2257	100043	Hearing
+2296	Falls in the last year	336617	582	NA	NA	2296	100042	General health
+2306	Weight change compared with 1 year ago	331803	5396	NA	NA	2306	100042	General health
+23099	Body fat percentage	331117	6082	NA	NA	23099	100009	Impedance measures
+23100	Whole body fat mass	330762	6437	NA	NA	23100	100009	Impedance measures
+23101	Whole body fat-free mass	331291	5908	NA	NA	23101	100009	Impedance measures
+23102	Whole body water mass	331315	5884	NA	NA	23102	100009	Impedance measures
+23105	Basal metabolic rate	331307	5892	NA	NA	23105	100009	Impedance measures
+23106	Impedance of whole body	331284	5915	NA	NA	23106	100009	Impedance measures
+23107	Impedance of leg (right)	331301	5898	NA	NA	23107	100009	Impedance measures
+23108	Impedance of leg (left)	331296	5903	NA	NA	23108	100009	Impedance measures
+23109	Impedance of arm (right)	331279	5920	NA	NA	23109	100009	Impedance measures
+23110	Impedance of arm (left)	331292	5907	NA	NA	23110	100009	Impedance measures
+23111	Leg fat percentage (right)	331296	5903	NA	NA	23111	100009	Impedance measures
+23112	Leg fat mass (right)	331293	5906	NA	NA	23112	100009	Impedance measures
+23113	Leg fat-free mass (right)	331285	5914	NA	NA	23113	100009	Impedance measures
+23114	Leg predicted mass (right)	331285	5914	NA	NA	23114	100009	Impedance measures
+23115	Leg fat percentage (left)	331278	5921	NA	NA	23115	100009	Impedance measures
+23116	Leg fat mass (left)	331275	5924	NA	NA	23116	100009	Impedance measures
+23117	Leg fat-free mass (left)	331258	5941	NA	NA	23117	100009	Impedance measures
+23118	Leg predicted mass (left)	331253	5946	NA	NA	23118	100009	Impedance measures
+23119	Arm fat percentage (right)	331249	5950	NA	NA	23119	100009	Impedance measures
+23120	Arm fat mass (right)	331226	5973	NA	NA	23120	100009	Impedance measures
+23121	Arm fat-free mass (right)	331221	5978	NA	NA	23121	100009	Impedance measures
+23122	Arm predicted mass (right)	331216	5983	NA	NA	23122	100009	Impedance measures
+23123	Arm fat percentage (left)	331198	6001	NA	NA	23123	100009	Impedance measures
+23124	Arm fat mass (left)	331164	6035	NA	NA	23124	100009	Impedance measures
+23125	Arm fat-free mass (left)	331159	6040	NA	NA	23125	100009	Impedance measures
+23126	Arm predicted mass (left)	331146	6053	NA	NA	23126	100009	Impedance measures
+23127	Trunk fat percentage	331113	6086	NA	NA	23127	100009	Impedance measures
+23128	Trunk fat mass	331093	6106	NA	NA	23128	100009	Impedance measures
+23129	Trunk fat-free mass	331030	6169	NA	NA	23129	100009	Impedance measures
+23130	Trunk predicted mass	330995	6204	NA	NA	23130	100009	Impedance measures
+2316	Wheeze or whistling in the chest in last year	331257	5942	68531	262726	2316	100037	Breathing
+2335	Chest pain or discomfort	334053	3146	51937	282116	2335	100039	Chest pain
+2345	Ever had bowel cancer screening	332011	5188	107072	224939	2345	100040	Cancer screening
+2355	Most recent bowel cancer screening	75920	261279	NA	NA	2355	100040	Cancer screening
+2365	Ever had prostate specific antigen (PSA) test	147970	189229	46523	101447	2365	100040	Cancer screening
+2375	Relative age of first facial hair	151113	186086	NA	NA	2375	100070	Male-specific factors
+2385	Relative age voice broke	144645	192554	NA	NA	2385	100070	Male-specific factors
+2395_2	Hair/balding pattern: Pattern 2	154988	182211	35563	119425	2395	100070	Male-specific factors
+2395_3	Hair/balding pattern: Pattern 3	154988	182211	41584	113404	2395	100070	Male-specific factors
+2395_4	Hair/balding pattern: Pattern 4	154988	182211	28389	126599	2395	100070	Male-specific factors
+2405	Number of children fathered	154888	182311	NA	NA	2405	100070	Male-specific factors
+2415	Had major operations	155045	182154	99647	55398	2415	100047	Operations
+2443	Diabetes diagnosed by doctor	336473	726	16183	320290	2443	100044	Medical conditions
+2453	Cancer diagnosed by doctor	336272	927	26576	309696	2453	100044	Medical conditions
+2463	Fractured/broken bones in last 5 years	335587	1612	32193	303394	2463	100044	Medical conditions
+2473	Other serious medical condition/disability diagnosed by doctor	331274	5925	67968	263306	2473	100044	Medical conditions
+2492	Taking other prescription medications	336330	869	158113	178217	2492	100045	Medication
+2624	Frequency of heavy DIY in last 4 weeks	137208	199991	NA	NA	2624	100054	Physical activity
+2634	Duration of heavy DIY	137364	199835	NA	NA	2634	100054	Physical activity
+2644	Light smokers, at least 100 smokes in lifetime	90517	246682	41027	49490	2644	100058	Smoking
+2664_3	Reason for reducing amount of alcohol drunk: Health precaution	124798	212401	40728	84070	2664	100051	Alcohol
+2674	Ever had breast cancer screening / mammogram	180861	156338	146420	34441	2674	100069	Female-specific factors
+2684	Years since last breast cancer screening / mammogram	108052	229147	NA	NA	2684	100069	Female-specific factors
+2704	Years since last cervical smear test	139363	197836	NA	NA	2704	100069	Female-specific factors
+2714	Age when periods started (menarche)	176008	161191	NA	NA	2714	100069	Female-specific factors
+2724	Had menopause	152035	185164	111605	40430	2724	100069	Female-specific factors
+2734	Number of live births	180952	156247	NA	NA	2734	100069	Female-specific factors
+2744	Birth weight of first child	145558	191641	NA	NA	2744	100069	Female-specific factors
+2754	Age at first live birth	123846	213353	NA	NA	2754	100069	Female-specific factors
+2764	Age at last live birth	123676	213523	NA	NA	2764	100069	Female-specific factors
+2774	Ever had stillbirth, spontaneous miscarriage or termination	178474	158725	56172	122302	2774	100069	Female-specific factors
+2784	Ever taken oral contraceptive pill	180749	156450	149365	31384	2784	100069	Female-specific factors
+2794	Age started oral contraceptive pill	144113	193086	NA	NA	2794	100069	Female-specific factors
+2814	Ever used hormone-replacement therapy (HRT)	180631	156568	71377	109254	2814	100069	Female-specific factors
+2834	Bilateral oophorectomy (both ovaries removed)	178676	158523	14702	163974	2834	100069	Female-specific factors
+2844	Had other major operations	179567	157632	120566	59001	2844	100047	Operations
+2887	Number of cigarettes previously smoked daily	78291	258908	NA	NA	2887	100058	Smoking
+2907	Ever stopped smoking for 6+ months	81538	255661	35064	46474	2907	100058	Smoking
+2926	Number of unsuccessful stop-smoking attempts	75135	262064	NA	NA	2926	100058	Smoking
+2936	Likelihood of resuming smoking	80926	256273	NA	NA	2936	100058	Smoking
+3005	Fracture resulting from simple fall	31762	305437	18864	12898	3005	100044	Medical conditions
+30510	Creatinine (enzymatic) in urine	327525	9674	NA	NA	30510	100083	Urine assays
+30520	Potassium in urine	326816	10383	NA	NA	30520	100083	Urine assays
+30530	Sodium in urine	326831	10368	NA	NA	30530	100083	Urine assays
+3062	Forced vital capacity (FVC)	307638	29561	NA	NA	3062	100020	Spirometry
+3063	Forced expiratory volume in 1-second (FEV1)	307638	29561	NA	NA	3063	100020	Spirometry
+3064	Peak expiratory flow (PEF)	307638	29561	NA	NA	3064	100020	Spirometry
+3393	Hearing aid user	204240	132959	10322	193918	3393	100043	Hearing
+3404	Neck/shoulder pain for 3+ months	75651	261548	52253	23398	3404	100048	Pain
+3456	Number of cigarettes currently smoked daily (current cigarette smokers)	23205	313994	NA	NA	3456	100058	Smoking
+3466	Time from waking to first cigarette	23265	313934	NA	NA	3466	100058	Smoking
+3476	Difficulty not smoking for 1 day	23332	313867	NA	NA	3476	100058	Smoking
+3486	Ever tried to stop smoking	25181	312018	NA	NA	3486	100058	Smoking
+3496	Wants to stop smoking	24913	312286	NA	NA	3496	100058	Smoking
+3526	Mother's age at death	199690	137509	NA	NA	3526	100034	Family history
+3571	Back pain for 3+ months	84489	252710	57893	26596	3571	100048	Pain
+3591	Ever had hysterectomy (womb removed)	159679	177520	13060	146619	3591	100069	Female-specific factors
+3637	Frequency of other exercises in last 4 weeks	161170	176029	NA	NA	3637	100054	Physical activity
+3647	Duration of other exercises	161301	175898	NA	NA	3647	100054	Physical activity
+3710	Length of menstrual cycle	30245	306954	NA	NA	3710	100069	Female-specific factors
+3731	Former alcohol drinker	21894	315305	11518	10376	3731	100051	Alcohol
+3741	Stomach/abdominal pain for 3+ months	27584	309615	15337	12247	3741	100048	Pain
+3751	Chest pain or discomfort when walking uphill or hurrying	41494	295705	11056	30438	3751	100039	Chest pain
+3773	Knee pain for 3+ months	70992	266207	55910	15082	3773	100048	Pain
+3799	Headaches for 3+ months	65583	271616	29979	35604	3799	100048	Pain
+3829	Number of stillbirths	56069	281130	NA	NA	3829	100069	Female-specific factors
+3839	Number of spontaneous miscarriages	55927	281272	NA	NA	3839	100069	Female-specific factors
+3849	Number of pregnancy terminations	55742	281457	NA	NA	3849	100069	Female-specific factors
+3872	Age of primiparous women at birth of child	23804	313395	NA	NA	3872	100069	Female-specific factors
+399	Number of incorrect matches in round	336881	318	NA	NA	399	100030	Pairs matching
+40009	Reported occurrences of cancer	44805	292394	NA	NA	40009	100092	Cancer register
+4079	Diastolic blood pressure, automated reading	317756	19443	NA	NA	4079	100011	Blood pressure
+4080	Systolic blood pressure, automated reading	317754	19445	NA	NA	4080	100011	Blood pressure
+4106	Heel bone mineral density (BMD) T-score, automated (left)	106254	230945	NA	NA	4106	100018	Bone-densitometry of heel
+4125	Heel bone mineral density (BMD) T-score, automated (right)	106251	230948	NA	NA	4125	100018	Bone-densitometry of heel
+4194	Pulse rate	110153	227046	NA	NA	4194	100007	Arterial stiffness
+4195	Pulse wave reflection index	110153	227046	NA	NA	4195	100007	Arterial stiffness
+4196	Pulse wave peak to peak time	110099	227100	NA	NA	4196	100007	Arterial stiffness
+4407	Average monthly red wine intake	24396	312803	NA	NA	4407	100051	Alcohol
+4418	Average monthly champagne plus white wine intake	24367	312832	NA	NA	4418	100051	Alcohol
+4429	Average monthly beer plus cider intake	24452	312747	NA	NA	4429	100051	Alcohol
+4440	Average monthly spirits intake	24364	312835	NA	NA	4440	100051	Alcohol
+4451	Average monthly fortified wine intake	24471	312728	NA	NA	4451	100051	Alcohol
+4462	Average monthly intake of other alcoholic drinks	24505	312694	NA	NA	4462	100051	Alcohol
+4501	Non-accidental death in close genetic family	105569	231630	28680	76889	4501	100034	Family history
+4526	Happiness	110935	226264	NA	NA	4526	100060	Mental health
+4537	Work/job satisfaction	75840	261359	NA	NA	4537	100060	Mental health
+4548	Health satisfaction	110964	226235	NA	NA	4548	100060	Mental health
+4559	Family relationship satisfaction	110290	226909	NA	NA	4559	100060	Mental health
+4570	Friendships satisfaction	110118	227081	NA	NA	4570	100060	Mental health
+4581	Financial situation satisfaction	110814	226385	NA	NA	4581	100060	Mental health
+4598	Ever depressed for a whole week	109229	227970	58468	50761	4598	100060	Mental health
+46	Hand grip strength (left)	335821	1378	NA	NA	46	100019	Hand grip strength
+4609	Longest period of depression	46884	290315	NA	NA	4609	100060	Mental health
+4620	Number of depression episodes	42378	294821	NA	NA	4620	100060	Mental health
+4631	Ever unenthusiastic/disinterested for a whole week	106868	230331	39154	67714	4631	100060	Mental health
+4653	Ever highly irritable/argumentative for 2 days	108925	228274	19265	89660	4653	100060	Mental health
+47	Hand grip strength (right)	335842	1357	NA	NA	47	100019	Hand grip strength
+4717	Shortness of breath walking on level ground	109508	227691	11459	98049	4717	100037	Breathing
+4728	Leg pain on walking	110337	226862	24101	86236	4728	100038	Claudication and peripheral artery disease
+48	Waist circumference	336639	560	NA	NA	48	100010	Body size measures
+4803_14	Tinnitus: Yes, but not now, but have in the past	109411	227788	12076	97335	4803	100043	Hearing
+4814	Tinnitus severity/nuisance	31627	305572	NA	NA	4814	100043	Hearing
+4825	Noisy workplace	110439	226760	NA	NA	4825	100043	Hearing
+4836	Loud music exposure frequency	109889	227310	NA	NA	4836	100043	Hearing
+49	Hip circumference	336601	598	NA	NA	49	100010	Body size measures
+50	Standing height	336474	725	NA	NA	50	100010	Body size measures
+5057	Number of older siblings	95618	241581	NA	NA	5057	100034	Family history
+5364	Average weekly intake of other alcoholic drinks	79291	257908	NA	NA	5364	100051	Alcohol
+5375	Longest period of unenthusiasm / disinterest	29704	307495	NA	NA	5375	100060	Mental health
+5386	Number of unenthusiastic/disinterested episodes	27707	309492	NA	NA	5386	100060	Mental health
+5485	Leg pain when walking normally	23470	313729	13259	10211	5485	100038	Claudication and peripheral artery disease
+5507	Leg pain on walking : action taken	23719	313480	NA	NA	5507	100038	Claudication and peripheral artery disease
+6015	Chest pain felt during physical activity	50451	286748	NA	NA	6015	100012	ECG during exercise
+6016	Chest pain felt outside physical activity	50451	286748	NA	NA	6016	100012	ECG during exercise
+6017	Able to walk or cycle unaided for 10 minutes	50451	286748	NA	NA	6017	100012	ECG during exercise
+6032	Maximum workload during fitness test	49623	287576	NA	NA	6032	100012	ECG during exercise
+6033	Maximum heart rate during fitness test	49610	287589	NA	NA	6033	100012	ECG during exercise
+6038	Number of trend entries	49623	287576	NA	NA	6038	100012	ECG during exercise
+6039	Duration of fitness test	49623	287576	NA	NA	6039	100012	ECG during exercise
+6138_1	Qualifications: College or University degree	334070	3129	106305	227765	6138	100063	Education
+6138_100	Qualifications: None of the above	334070	3129	57567	276503	6138	100063	Education
+6138_2	Qualifications: A levels/AS levels or equivalent	334070	3129	91710	242360	6138	100063	Education
+6138_3	Qualifications: O levels/GCSEs or equivalent	334070	3129	159730	174340	6138	100063	Education
+6138_4	Qualifications: CSEs or equivalent	334070	3129	44362	289708	6138	100063	Education
+6138_5	Qualifications: NVQ or HND or HNC or equivalent	334070	3129	62848	271222	6138	100063	Education
+6138_6	Qualifications: Other professional qualifications eg: nursing, teaching	334070	3129	97524	236546	6138	100063	Education
+6142_1	Current employment status: In paid employment or self-employed	336252	947	190779	145473	6142	100064	Employment
+6142_2	Current employment status: Retired	336252	947	125766	210486	6142	100064	Employment
+6142_3	Current employment status: Looking after home and/or family	336252	947	16722	319530	6142	100064	Employment
+6142_4	Current employment status: Unable to work because of sickness or disability	336252	947	12554	323698	6142	100064	Employment
+6142_6	Current employment status: Doing unpaid or voluntary work	336252	947	12407	323845	6142	100064	Employment
+6143_1	Transport type for commuting to job workplace: Car/motor vehicle	177550	159649	142996	34554	6143	100064	Employment
+6143_2	Transport type for commuting to job workplace: Walk	177550	159649	27862	149688	6143	100064	Employment
+6143_3	Transport type for commuting to job workplace: Public transport	177550	159649	35908	141642	6143	100064	Employment
+6143_4	Transport type for commuting to job workplace: Cycle	177550	159649	13527	164023	6143	100064	Employment
+6145_1	Illness, injury, bereavement, stress in last 2 years: Serious illness, injury or assault to yourself	335219	1980	30762	304457	6145	100060	Mental health
+6145_100	Illness, injury, bereavement, stress in last 2 years: None of the above	335219	1980	189518	145701	6145	100060	Mental health
+6145_2	Illness, injury, bereavement, stress in last 2 years: Serious illness, injury or assault of a close relative	335219	1980	38516	296703	6145	100060	Mental health
+6145_3	Illness, injury, bereavement, stress in last 2 years: Death of a close relative	335219	1980	69921	265298	6145	100060	Mental health
+6145_6	Illness, injury, bereavement, stress in last 2 years: Financial difficulties	335219	1980	37284	297935	6145	100060	Mental health
+6147_1	Reason for glasses/contact lenses: For short-sightedness, i.e. only or mainly for distance viewing such as driving, cinema etc (called 'myopia')	335700	1499	26943	308757	6147	100041	Eyesight
+6147_2	Reason for glasses/contact lenses: For long-sightedness, i.e. for distance and near, but particularly for near tasks like reading (called 'hypermetropia')	335700	1499	13923	321777	6147	100041	Eyesight
+6147_3	Reason for glasses/contact lenses: For just reading/near work as you are getting older (called 'presbyopia')	335700	1499	29144	306556	6147	100041	Eyesight
+6148_100	Eye problems/disorders: None of the above	108817	228382	84686	24131	6148	100041	Eyesight
+6148_4	Eye problems/disorders: Cataract	108817	228382	10475	98342	6148	100041	Eyesight
+6149_1	Mouth/teeth dental problems: Mouth ulcers	336138	1061	34398	301740	6149	100046	Mouth
+6149_100	Mouth/teeth dental problems: None of the above	336138	1061	204310	131828	6149	100046	Mouth
+6149_3	Mouth/teeth dental problems: Bleeding gums	336138	1061	43469	292669	6149	100046	Mouth
+6149_4	Mouth/teeth dental problems: Loose teeth	336138	1061	13238	322900	6149	100046	Mouth
+6149_5	Mouth/teeth dental problems: Toothache	336138	1061	13290	322848	6149	100046	Mouth
+6149_6	Mouth/teeth dental problems: Dentures	336138	1061	56894	279244	6149	100046	Mouth
+6150_100	Vascular/heart problems diagnosed by doctor: None of the above	336683	516	236530	100153	6150	100044	Medical conditions
+6150_2	Vascular/heart problems diagnosed by doctor: Angina	336683	516	10618	326065	6150	100044	Medical conditions
+6150_4	Vascular/heart problems diagnosed by doctor: High blood pressure	336683	516	91033	245650	6150	100044	Medical conditions
+6151_7	Fractured bone site(s): Other bones	335546	1653	17380	318166	6151	100044	Medical conditions
+6152_100	Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor: None of the above	336782	417	228530	108252	6152	100044	Medical conditions
+6152_8	Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor: Asthma	336782	417	38791	297991	6152	100044	Medical conditions
+6152_9	Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor: Hayfever, allergic rhinitis or eczema	336782	417	77891	258891	6152	100044	Medical conditions
+6153_1	Medication for cholesterol, blood pressure, diabetes, or take exogenous hormones: Cholesterol lowering medication	180203	156996	22705	157498	6153	100045	Medication
+6153_100	Medication for cholesterol, blood pressure, diabetes, or take exogenous hormones: None of the above	180203	156996	124239	55964	6153	100045	Medication
+6153_2	Medication for cholesterol, blood pressure, diabetes, or take exogenous hormones: Blood pressure medication	180203	156996	31488	148715	6153	100045	Medication
+6153_4	Medication for cholesterol, blood pressure, diabetes, or take exogenous hormones: Hormone replacement therapy	180203	156996	13365	166838	6153	100045	Medication
+6154_1	Medication for pain relief, constipation, heartburn: Aspirin	333581	3618	46946	286635	6154	100045	Medication
+6154_100	Medication for pain relief, constipation, heartburn: None of the above	333581	3618	184936	148645	6154	100045	Medication
+6154_2	Medication for pain relief, constipation, heartburn: Ibuprofen (e.g. Nurofen)	333581	3618	49411	284170	6154	100045	Medication
+6154_3	Medication for pain relief, constipation, heartburn: Paracetamol	333581	3618	72882	260699	6154	100045	Medication
+6154_5	Medication for pain relief, constipation, heartburn: Omeprazole (e.g. Zanprol)	333581	3618	20058	313523	6154	100045	Medication
+6155_100	Vitamin and mineral supplements: None of the above	335591	1608	231424	104167	6155	100045	Medication
+6155_2	Vitamin and mineral supplements: Vitamin B	335591	1608	13498	322093	6155	100045	Medication
+6155_3	Vitamin and mineral supplements: Vitamin C	335591	1608	28536	307055	6155	100045	Medication
+6155_4	Vitamin and mineral supplements: Vitamin D	335591	1608	12510	323081	6155	100045	Medication
+6155_7	Vitamin and mineral supplements: Multivitamins +/- minerals	335591	1608	71695	263896	6155	100045	Medication
+6157_100	Why stopped smoking: None of the above	82082	255117	16472	65610	6157	100058	Smoking
+6157_3	Why stopped smoking: Health precaution	82082	255117	51560	30522	6157	100058	Smoking
+6157_4	Why stopped smoking: Financial reasons	82082	255117	20359	61723	6157	100058	Smoking
+6159_1	Pain type(s) experienced in last month: Headache	336650	549	66967	269683	6159	100048	Pain
+6159_100	Pain type(s) experienced in last month: None of the above	336650	549	136199	200451	6159	100048	Pain
+6159_3	Pain type(s) experienced in last month: Neck or shoulder pain	336650	549	76404	260246	6159	100048	Pain
+6159_4	Pain type(s) experienced in last month: Back pain	336650	549	85221	251429	6159	100048	Pain
+6159_5	Pain type(s) experienced in last month: Stomach or abdominal pain	336650	549	28098	308552	6159	100048	Pain
+6159_6	Pain type(s) experienced in last month: Hip pain	336650	549	37714	298936	6159	100048	Pain
+6159_7	Pain type(s) experienced in last month: Knee pain	336650	549	71561	265089	6159	100048	Pain
+6162_1	Types of transport used (excluding work): Car/motor vehicle	335650	1549	268888	66762	6162	100054	Physical activity
+6162_2	Types of transport used (excluding work): Walk	335650	1549	165354	170296	6162	100054	Physical activity
+6162_3	Types of transport used (excluding work): Public transport	335650	1549	99542	236108	6162	100054	Physical activity
+6162_4	Types of transport used (excluding work): Cycle	335650	1549	23918	311732	6162	100054	Physical activity
+6164_1	Types of physical activity in last 4 weeks: Walking for pleasure (not as a means of transport)	335599	1600	241930	93669	6164	100054	Physical activity
+6164_100	Types of physical activity in last 4 weeks: None of the above	335599	1600	19551	316048	6164	100054	Physical activity
+6164_2	Types of physical activity in last 4 weeks: Other exercises (eg: swimming, cycling, keep fit, bowling)	335599	1600	162803	172796	6164	100054	Physical activity
+6164_3	Types of physical activity in last 4 weeks: Strenuous sports	335599	1600	34693	300906	6164	100054	Physical activity
+6164_4	Types of physical activity in last 4 weeks: Light DIY (eg: pruning, watering the lawn)	335599	1600	175376	160223	6164	100054	Physical activity
+6164_5	Types of physical activity in last 4 weeks: Heavy DIY (eg: weeding, lawn mowing, carpentry, digging)	335599	1600	147922	187677	6164	100054	Physical activity
+6177_1	Medication for cholesterol, blood pressure or diabetes: Cholesterol lowering medication	154702	182497	35840	118862	6177	100045	Medication
+6177_100	Medication for cholesterol, blood pressure or diabetes: None of the above	154702	182497	103004	51698	6177	100045	Medication
+6177_2	Medication for cholesterol, blood pressure or diabetes: Blood pressure medication	154702	182497	38548	116154	6177	100045	Medication
+6179_1	Mineral and other dietary supplements: Fish oil (including cod liver oil)	336314	885	106738	229576	6179	100045	Medication
+6179_100	Mineral and other dietary supplements: None of the above	336314	885	191371	144943	6179	100045	Medication
+6179_2	Mineral and other dietary supplements: Glucosamine	336314	885	65971	270343	6179	100045	Medication
+6179_3	Mineral and other dietary supplements: Calcium	336314	885	22047	314267	6179	100045	Medication
+6179_4	Mineral and other dietary supplements: Zinc	336314	885	13151	323163	6179	100045	Medication
+757	Time employed in main current job	180531	156668	NA	NA	757	100064	Employment
+767	Length of working week for main job	188166	149033	NA	NA	767	100064	Employment
+777	Frequency of travelling from home to job workplace	190557	146642	NA	NA	777	100064	Employment
+78	Heel bone mineral density (BMD) T-score, automated	194398	142801	NA	NA	78	100018	Bone-densitometry of heel
+796	Distance between home and job workplace	161121	176078	NA	NA	796	100064	Employment
+806	Job involves mainly walking or standing	190606	146593	NA	NA	806	100064	Employment
+816	Job involves heavy manual or physical work	190643	146556	NA	NA	816	100064	Employment
+826	Job involves shift work	190442	146757	NA	NA	826	100064	Employment
+845	Age completed full time education	226899	110300	NA	NA	845	100063	Education
+864	Number of days/week walked 10+ minutes	331654	5545	NA	NA	864	100054	Physical activity
+874	Duration of walks	288266	48933	NA	NA	874	100054	Physical activity
+884	Number of days/week of moderate physical activity 10+ minutes	321309	15890	NA	NA	884	100054	Physical activity
+894	Duration of moderate activity	251031	86168	NA	NA	894	100054	Physical activity
+90088	No-wear time bias adjusted acceleration standard deviation	72615	264584	NA	NA	90088	1009	Acceleration averages
+904	Number of days/week of vigorous physical activity 10+ minutes	321533	15666	NA	NA	904	100054	Physical activity
+914	Duration of vigorous activity	183731	153468	NA	NA	914	100054	Physical activity
+924	Usual walking pace	335349	1850	NA	NA	924	100054	Physical activity
+943	Frequency of stair climbing in last 4 weeks	334169	3030	NA	NA	943	100054	Physical activity
+971	Frequency of walking for pleasure in last 4 weeks	240924	96275	NA	NA	971	100054	Physical activity
+981	Duration walking for pleasure	240788	96411	NA	NA	981	100054	Physical activity
+991	Frequency of strenuous sports in last 4 weeks	34321	302878	NA	NA	991	100054	Physical activity
